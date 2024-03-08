@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louise - Personal Portfolio</title>
+  <!-- Links -->
+  <link rel="shortcut icon" href="/img/icons/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="img/memojis/Memoji_Louise.gif" alt="Louise Lam">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Louise Lam">Louise Lam</h1>
+          <p class="title">Student in Bioinformatics</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:louise.lam@etu.u-paris.fr" class="contact-link">louise.lam@etu.u-paris.fr</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+33760034862" class="contact-link">+(33)7 60 03 48 62</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Paris, France</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+      </div>
+    </aside>
+
+    <!-- Fenetre principale -->
+    <div class="main-content">
+      <!-- Barre de navigation -->
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- About Me -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            🎓 I am currently pursuing my Master's degree in Bioinformatics, focusing on leveraging computational
+            techniques to solve biological problems.
+          </p>
+          <p>
+            💻 I am deeply passionate about various aspects of bioinformatics, including machine learning, data
+            analysis, databases, structural biology, and genomics. I find the intersection of biology and technology
+            fascinating and enjoy exploring innovative ways to apply computational methods in biological research.
+          </p>
+          <p>
+            🎨 Aside from my academic pursuits, I have a love for paintings and various artistic disciplines. I find
+            inspiration in creativity and enjoy exploring different forms of artistic expression in my free time.
+          </p>
+          <p>
+            🗣️ In terms of languages, I am fluent in English, French, and Arabic. Additionally, I have a basic
+            knowledge of Korean, which I am continuously working to improve. I believe that language is a gateway to
+            understanding different cultures and connecting with people from diverse backgrounds.
+          </p>
+          <p>
+            Overall, I am driven by a curiosity for knowledge and a desire to make meaningful contributions to the field
+            of bioinformatics while also embracing the beauty of art and culture in all its forms.
+          </p>
+        </section>
+        <section class="service">
+          <h3 class="h3 service-title">What I Do</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/icons/icon-dev.svg" alt="Bioinformatics icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Structural Bioinformatics</h4>
+                <p class="service-item-text">
+                  Advanced analysis and modeling of biomolecular structures using computational methods.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/icons/icon-design.svg" alt="Machine Learning icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning in Biology</h4>
+                <p class="service-item-text">
+                  Applying machine learning techniques to analyze biological data and predict biological phenomena.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/icons/icon-design.svg" alt="Macromolecular Dynamics icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Macromolecular Dynamics</h4>
+                <p class="service-item-text">
+                  Studying the dynamic behavior of biological macromolecules using computational simulations.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/icons/icon-dev.svg" alt="Drug Design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Drug Design & Protein Docking</h4>
+                <p class="service-item-text">
+                  Utilizing computational methods to design and optimize drug molecules for targeted interactions with
+                  proteins.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="/img/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="/img/icons/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- Resume -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <!-- Education -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Paris Cité University</h4>
+              <span>2023 — 2024</span>
+              <p class="timeline-text">
+                Master's Degree in Computational Biology - Platform Engineer in Biology.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Paris Saclay University</h4>
+              <span>2020 — 2023</span>
+              <p class="timeline-text">
+                Double degree in life sciences and computer science.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <!-- Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"> Internship in a laboratory </h4>
+              <span> march 2024 — july 2024</span>
+              <p class="timeline-text">
+                Building a conversational assistant for learning Python programming in bioinformatics.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Homework assistance - Tutoring sessions</h4>
+              <span>2018 — Present </span>
+              <p class="timeline-text">
+                Supporting students facing difficulties from the Second Grade to the Baccalaureate level.
+                Managing a heterogeneous class, Versatility, patience.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Facilitating artistic and manual workshops</h4>
+              <span>School holidays since 2022</span>
+              <p class="timeline-text">
+                Preparation of creative workshops (Painting, personalized decoration, pastry...etc).
+                Audience: Adults and children, Ingenuity, Dynamism, Sociability, Conscientiousness.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <!-- Skills -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Skills</h5>
+                <data value="99">99%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:99%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analysis</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Bioinformatics Tools Knowledge</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Communication Skills</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Modeling and Simulation Skills</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item  active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="img/icons/oligo.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Modeling the asymmetry of a homo-oligomer game using neural networks </h3>
+                <p class="project-category"> Tutoring Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="img/icons/topo.jpeg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Analysis of amino acid diversity in type IA topoisomerase DNA</h3>
+                <p class="project-category">Bioinformatics Project</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="img/icons/database.jpeg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Implementation of a database in Oracle for a futuristic museum</h3>
+                <p class="project-category">Advanced Database</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Contact -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <!-- map -->
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6747437.523643126!2d2.151086293645678!3d48.85661452643487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sfr!4v1646521744173!5m2!1sen!2sfr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
