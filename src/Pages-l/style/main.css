@@ -1,0 +1,66 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation1 .streaming{
+    background-color: lightgreen;
+}
+
+.navigation1 .reading{
+    background-color: palegreen;
+}
+
+.addbutton{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+.addbutton button{
+    background-color: lightgrey;
+    width: 20%;
+    height: 90%;
+    border: 0;
+}
+
+.addbutton button:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+.navigation2{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li{
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-top: 20px;
+    border: 0;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    border-bottom: solid darkgreen;
+}
+

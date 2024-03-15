@@ -1,0 +1,26 @@
+.navigation3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation3 .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.menu li{
+    background-color: darkgreen;
+    width: 100%;
+    margin: 2%;
+}
+
+.menu li:hover{
+    border:0;
+    color:white;
+}
