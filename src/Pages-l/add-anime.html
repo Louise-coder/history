@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HiStory</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>  
+            @import url("style/base.css");
+            @import url("style/int.css");
+            @import url("style/add-anime.css");
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <h1><a href="home.html">HiStory</a></h1>
+        </div>
+        <div class="content">
+            <div class="buttons">
+                <div class="back">
+                    <button type="button"><a href="main.html">Back to library</a></button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="pic">
+                    <div class="img">
+                        <img src="img/upload-img.jpg" id="anime-pic">
+                        <label for="input-file">Upload image</label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                    </div>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1">
+                        <label for="star1"></label>
+                        <input type="radio" name="star" id="star2">
+                        <label for="star2"></label>
+                        <input type="radio" name="star" id="star3">
+                        <label for="star3"></label>
+                        <input type="radio" name="star" id="star4">
+                        <label for="star4"></label>
+                        <input type="radio" name="star" id="star5">
+                        <label for="star5"></label>
+                    </div>
+                </div>
+                <div class="myform">
+                    <form>
+                        <h1>Anime</h1>
+                        <span>
+                            <label for="title">Title*: </label>
+                            <input type="text" id="title" name="anime_title">
+                        </span>
+                        <span>
+                            <label for="producer">Producer: </label>
+                            <input type="text" id="producer" name="anime_producer">
+                        </span>
+                        <span>
+                            <label for="year">Year*:</label>
+                            <select name="year" id="year"></select>
+                        </span>
+                        <span>
+                            <label for="ep">Number of episodes*:</label>
+                            <input type="text" id="ep" name="anime_ep" size="3">
+                        </span>
+                        <span>
+                            <label for="season">Season*:</label>
+                            <select name="season" id="season"></select>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="josei" name="genre" value="josei">
+                            <label for="rasmus">Josei</label>
+                            <input type="checkbox" id="kodomo" name="genre" value="kodomo">
+                            <label for="rasmus">Kodomo</label>
+                            <input type="checkbox" id="shojo" name="genre" value="shojo">
+                            <label for="rasmus">Shojo</label>
+                            <input type="checkbox" id="shonen" name="genre" value="shonen">
+                            <label for="rasmus">Shônen</label>
+                            <input type="checkbox" id="seinen" name="genre" value="seinen">
+                            <label for="rasmus">Seinen</label>    
+                        </span>
+                        <span>
+                            <label for="plateform">Watch on:</label>
+                            <select id="plateform" label="plateform">
+                                <option value=""></option>
+                                <option value="adn">ADN</option>
+                                <option value="crunchyroll">Crunchyroll</option>
+                                <option value="netflix">Netflix</option>
+                                <option value="primevideo">PrimeVideo</option>
+                            </select>
+                        </span>
+                            <label for="synopsis">Synopsis:</label><br>
+                            <textarea id="synopsis" name="anime-synopsis"></textarea>
+                        <span>
+
+                        </span>
+                    </form>
+                    <script src="js/add-anime.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center">
+            <hr>
+            <br>
+            Copyright &copy; Université Paris-Cité - All rights reserved
+            <br>
+            Contact: <a href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a href="mailto:essmay.touamy@etu.u-paris.fr"> Essmay TOUAMY</a>
+        </footer>
+    </body>
+</html>
