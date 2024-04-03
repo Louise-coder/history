@@ -1,5 +1,4 @@
 const yearSelect = document.getElementById("year");
-const seasonSelect = document.getElementById("season");
 
 function populateYears(){
     let year = new Date().getFullYear();
@@ -10,17 +9,7 @@ function populateYears(){
     }
 }
 
-function populateSeason(){
-    let ep = 1;
-    for(let i = 0; i < 5; i++){
-        const option = document.createElement("option");
-        option.textContent = ep + i;
-        seasonSelect.appendChild(option);
-    }
-}
-
 populateYears();
-populateSeason();
 
 let profilePic = document.getElementById("anime-pic");
 let inputFile = document.getElementById("input-file");

@@ -1,11 +1,4 @@
-.content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
+/* NAVBAR 1 */
 .buttons{
     display: flex;
     flex-direction: row;
@@ -14,7 +7,6 @@
     margin-bottom: 0px;
     justify-content: left;
 }
-
 .navigation1{
     display: flex;
     flex-direction: row;
@@ -24,7 +16,6 @@
     padding: 0px;
     margin-bottom: 0px;
 }
-
 .navigation1 li{
     height: 30px;
     width: 200px;
@@ -33,51 +24,50 @@
     padding-top: 15px;
     border: 0;
 }
-
-.navigation1 li:hover{
-    cursor: pointer;
-}
-
-.navigation1 .streaming{
+.navigation1 .active{
     background-color: lightgreen;
 }
-
-.navigation1 .reading{
+.navigation1 .non-active{
     background-color: palegreen;
 }
-
-.addbutton{
+.navigation1 .non-active a{
+    color: black;
+    text-decoration: none;
+}
+.navigation1 .non-active a:hover{
+    cursor: pointer;
+    color: white;
+}
+.backbutton{
     display: flex;
     flex-direction: row;
     width: 50%;
     justify-content: right;
     align-items: center;
 }
-
-.addbutton button{
+.backbutton button{
     background-color: lightgrey;
     width: 20%;
     height: 90%;
     border: 0;
 }
-
-.addbutton button:hover{
+.backbutton button:hover{
     cursor: pointer;
     background-color: darkgrey;
 }
 
-.content .main{
+/* MAIN */
+.main{
     display: flex;
     flex-direction: column;
     background-color: lightgreen;
     width: 97%;
-    height: 600px;
+    height: 70vh;
     margin: 1%;
     margin-top: 0;
     justify-content: center;
     align-items: center;
 }
-
 .navigation3{
     display: flex;
     width: 100%;
@@ -85,7 +75,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .navigation3 .menu{
     list-style: none;
     display: flex;
@@ -98,7 +87,6 @@
     margin: 0px;
     width: 80%;
 }
-
 .menu li{
     height: 35px;
     width: 300px;
@@ -110,8 +98,11 @@
     width: 100%;
     margin: 2%;
 }
-
-.menu li:hover{
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+.menu li a:hover{
     cursor: pointer;
     border-bottom: solid darkgreen;
     border:0;

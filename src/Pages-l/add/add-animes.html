@@ -4,26 +4,37 @@
         <meta charset="UTF-8">
         <title>HiStory</title>
         <style>  
-            @import url("style/banner-footer.css");
-            @import url("style/add-anime.css");
+            @import url("../style/banner-footer.css");
+            @import url("style/add-content.css");
         </style>
         <!-- for the star notation -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="banner">
-            <h1><a href="home.html">HiStory</a></h1>
+            <h1><a href="../home.html">HiStory</a></h1>
         </div>
-        <div class="content">
-            <div class="buttons">
-                <div class="back">
-                    <button type="button"><a href="main.html">Back to library</a></button>
-                </div>
+        <div class="buttons">
+            <ul class="navigation1">
+                <li class="active">STREAMING</li>
+                <li class="non-active"><a href="add-reading.html">READING</a></li>
+            </ul>
+            <div class="backbutton">
+                <button type="button"><a href="../library/library-streaming.html">Back</a></button>
             </div>
-            <div class="main">
+        </div>
+        <div class="main">
+            <div class="buttons2">
+                <ul class="navigation2">
+                    <li class="active">Animes</li>
+                    <li class="non-active"><a href="add-movies.html">Movies</a></li>
+                    <li class="non-active"><a href="add-series.html">Series</a></li>
+                </ul>
+            </div>
+            <div class="mycontent">
                 <div class="pic">
                     <div class="img">
-                        <img src="img/upload-img.jpg" id="anime-pic">
+                        <img src="../img/upload-img.jpg" id="anime-pic">
                         <label for="input-file">Upload image</label>
                         <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
                     </div>
@@ -60,20 +71,16 @@
                             <input type="text" id="ep" name="anime_ep" size="3">
                         </span>
                         <span>
-                            <label for="season">Season*:</label>
-                            <select name="season" id="season"></select>
-                        </span>
-                        <span>
                             <input type="checkbox" id="josei" name="genre" value="josei">
-                            <label for="rasmus">Josei</label>
+                            <label for="josei">Josei</label>
                             <input type="checkbox" id="kodomo" name="genre" value="kodomo">
-                            <label for="rasmus">Kodomo</label>
+                            <label for="kodomo">Kodomo</label>
                             <input type="checkbox" id="shojo" name="genre" value="shojo">
-                            <label for="rasmus">Shojo</label>
+                            <label for="shojo">Shojo</label>
                             <input type="checkbox" id="shonen" name="genre" value="shonen">
-                            <label for="rasmus">Shônen</label>
+                            <label for="shonen">Shônen</label>
                             <input type="checkbox" id="seinen" name="genre" value="seinen">
-                            <label for="rasmus">Seinen</label>    
+                            <label for="seinen">Seinen</label>
                         </span>
                         <span>
                             <label for="plateform">Watch on:</label>
@@ -85,13 +92,15 @@
                                 <option value="primevideo">PrimeVideo</option>
                             </select>
                         </span>
-                            <label for="synopsis">Synopsis:</label><br>
-                            <textarea id="synopsis" name="anime-synopsis"></textarea>
                         <span>
-
+                            <label for="synopsis">Synopsis:</label><br>
+                            <textarea id="synopsis" name="anime_synopsis"></textarea>
                         </span>
+                        <div class="addbutton">
+                            <button type="button" value="submitted" onClick="">Add</button>
+                        </div>
                     </form>
-                    <script src="js/add-anime.js"></script>
+                    <script src="js/add-content.js"></script>
                 </div>
             </div>
         </div>
