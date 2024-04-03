@@ -40,6 +40,9 @@
 .navigation1 .reading{
     background-color: palegreen;
 }
+.active{
+    color: white;
+}
 .addbutton{
     display: flex;
     flex-direction: row;
