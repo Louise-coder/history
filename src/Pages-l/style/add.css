@@ -1,3 +1,83 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    margin: 1%;
+    margin-bottom: 0px;
+    justify-content: left;
+}
+
+.navigation1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    justify-content: left;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.navigation1 li{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid;
+    padding-top: 15px;
+    border: 0;
+}
+
+.navigation1 li:hover{
+    cursor: pointer;
+}
+
+.navigation1 .streaming{
+    background-color: lightgreen;
+}
+
+.navigation1 .reading{
+    background-color: palegreen;
+}
+
+.addbutton{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+.addbutton button{
+    background-color: lightgrey;
+    width: 20%;
+    height: 90%;
+    border: 0;
+}
+
+.addbutton button:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+.content .main{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 97%;
+    height: 600px;
+    margin: 1%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .navigation3{
     display: flex;
     width: 100%;
@@ -7,20 +87,33 @@
 }
 
 .navigation3 .menu{
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
     width: 80%;
 }
 
 .menu li{
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-top: 20px;
+    border: 0;
     background-color: darkgreen;
     width: 100%;
     margin: 2%;
 }
 
 .menu li:hover{
+    cursor: pointer;
+    border-bottom: solid darkgreen;
     border:0;
     color:white;
 }

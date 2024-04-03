@@ -1,3 +1,4 @@
+/* BANNER */
 .banner{
     display: flex;
     flex-direction: column;
@@ -28,6 +29,7 @@
     background-color: darkgrey;
 }
 
+/* WHAT */
 .what h1{
     font-weight:600;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,20 +43,57 @@
     margin: 1%;
 }
 
+/* WHO */
 .who h1{
     font-weight:600;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
-
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    margin: 1%;
+    margin-bottom: 0px;
+    justify-content: left;
+}
+.navigation1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    justify-content: left;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.navigation1 li{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid;
+    padding-top: 15px;
+    border: 0;
+}
+.navigation1 li:hover{
+    cursor: pointer;
+}
 .essmay{
     background-color: lightgreen;
 }
 .louise{
     background-color: palegreen;
 }
-
-
+.content .main{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 97%;
+    height: 600px;
+    margin: 1%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
 footer{
     text-align: center;
 }

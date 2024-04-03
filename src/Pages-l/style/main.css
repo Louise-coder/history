@@ -1,3 +1,4 @@
+/* NAVBAR 1 */
 .content{
     display: flex;
     flex-direction: column;
@@ -5,15 +6,40 @@
     justify-content: center;
     align-items: center;
 }
-
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    margin: 1%;
+    margin-bottom: 0px;
+    justify-content: left;
+}
+.navigation1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    justify-content: left;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.navigation1 li{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid;
+    padding-top: 15px;
+    border: 0;
+}
+.navigation1 li:hover{
+    cursor: pointer;
+}
 .navigation1 .streaming{
     background-color: lightgreen;
 }
-
 .navigation1 .reading{
     background-color: palegreen;
 }
-
 .addbutton{
     display: flex;
     flex-direction: row;
@@ -21,24 +47,33 @@
     justify-content: right;
     align-items: center;
 }
-
 .addbutton button{
     background-color: lightgrey;
     width: 20%;
     height: 90%;
     border: 0;
 }
-
 .addbutton button:hover{
     cursor: pointer;
     background-color: darkgrey;
 }
 
+/* CONTENT */
+.content .main{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 97%;
+    height: 600px;
+    margin: 1%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
 .navigation2{
     display: flex;
     justify-content: center;
 }
-
 .menu{
     display: flex;
     flex-direction: row;
@@ -49,7 +84,6 @@
     padding: 0px;
     margin: 0px;
 }
-
 .menu li{
     height: 35px;
     width: 300px;
@@ -58,9 +92,15 @@
     padding-top: 20px;
     border: 0;
 }
-
 .menu li:hover{
     cursor: pointer;
     border-bottom: solid darkgreen;
+}
+.mycontent{
+    height: 400%;
+    width: 95%;
+    margin: 2%;
+    padding-top: 1%;
+    background-color: palegoldenrod;
 }
 
