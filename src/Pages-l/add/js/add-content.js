@@ -1,3 +1,4 @@
+/* Populate inputs */
 const yearSelect = document.getElementById("year");
 
 function populateYears(){
@@ -11,10 +12,29 @@ function populateYears(){
 
 populateYears();
 
-let profilePic = document.getElementById("anime-pic");
-let inputFile = document.getElementById("input-file");
-inputFile.onchange = function(){
-    profilePic.src = URL.createObjectURL(inputFile.files[0]);
+/* Upload picture */
+const dropArea = document.getElementById("drop-area");
+const inputFile = document.getElementById("input-file");
+const imageView = document.getElementById("img-view");
+
+inputFile.addEventListener("change", uploadImage);
+
+function uploadImage(){
+    let imgLink = URL.createObjectURL(inputFile.files[0])
+    imageView.style.backgroundImage = `url(${imgLink})`;
+    imageView.textContent = "";
+    imageView.style.border = 0;
 }
+dropArea.addEventListener("dragover", function(e){
+    e.preventDefault();
+});
+dropArea.addEventListener("drop", function(e){
+    e.preventDefault();
+    inputFile.files = e.dataTransfer.files;
+    uploadImage();
+});
 
-
+clear.onclick = () =>{
+    localStorage.clear();
+    document.location.reload();
+}

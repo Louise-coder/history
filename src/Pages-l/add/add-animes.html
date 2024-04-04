@@ -34,21 +34,26 @@
             <div class="mycontent">
                 <div class="pic">
                     <div class="img">
-                        <img src="../img/upload-img.jpg" id="anime-pic">
-                        <label for="input-file">Upload image</label>
-                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                        <label for="input-file" id="drop-area">
+                            <input type="file" accept="image/*" id="input-file" hidden>
+                            <div id="img-view">
+                                <img src="../img/upload-img.jpg">
+                                <p>Drag and drop or click here to upload image.</p>
+                                <span>Upload any images from desktop</span>
+                            </div>
+                        </label>
                     </div>
                     <div class="rating">
-                        <input type="radio" name="star" id="star1">
-                        <label for="star1"></label>
-                        <input type="radio" name="star" id="star2">
-                        <label for="star2"></label>
-                        <input type="radio" name="star" id="star3">
-                        <label for="star3"></label>
-                        <input type="radio" name="star" id="star4">
-                        <label for="star4"></label>
                         <input type="radio" name="star" id="star5">
                         <label for="star5"></label>
+                        <input type="radio" name="star" id="star4">
+                        <label for="star4"></label>
+                        <input type="radio" name="star" id="star3">
+                        <label for="star3"></label>
+                        <input type="radio" name="star" id="star2">
+                        <label for="star2"></label>
+                        <input type="radio" name="star" id="star1">
+                        <label for="star1"></label>
                     </div>
                 </div>
                 <div class="myform">
@@ -97,13 +102,15 @@
                             <textarea id="synopsis" name="anime_synopsis"></textarea>
                         </span>
                         <div class="addbutton">
-                            <button type="button" value="submitted" onClick="">Add</button>
+                            <button type="button" id="add_anime" value="submitted">Add</button>
                         </div>
+                        <button type="button" id="clear">clear LS</button>
                     </form>
-                    <script src="js/add-content.js"></script>
                 </div>
             </div>
         </div>
+        <script src="js/add-content.js"></script>
+        <script src="js/add-anime.js"></script>
 
         <footer class="text-center">
             <hr>

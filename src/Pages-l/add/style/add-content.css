@@ -105,6 +105,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 /* LEFT PANEL */
@@ -113,9 +114,9 @@
     flex-direction: column;
     height: 90%;
     width: 40%;
-    background-color: grey;
+    background-color: darkgreen;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
 .img{
     display: flex;
@@ -123,32 +124,42 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 80%;
     background-color: green;
 }
-.pic img{
-    width: 45%;
-    border-radius: 20%;
-    margin-top: 0;
+#drop-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 250px;
     padding: 5%;
-}
-.img label{
-    display: block;
-    width: 200px;
-    background-color: pink;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 30px;
-    padding-top: 13px;
-    width: 50%;
+    background-color: #fff;
     text-align: center;
+    border-radius: 20px;
 }
-.img input{
-    display:none;
+#img-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background-color: #f7f8ff;
+    background-position: center;
+    background-size: cover;
 }
-label:hover{
-    background-color: grey;
+#img-view img{
+    width: 70%;
 }
+#img-view span{
+    display: block;
+    color: #777;
+}
+
 /* star rating */
 .rating{
     display:flex;
@@ -251,16 +262,7 @@ textarea{
         flex-direction: column;
     }
     .pic{
-        flex-direction: column;
         width: 100%;
-        height: 50%;
-    }
-    .pic .img{
-        height: 100%;
-    }
-    .pic img{
-        width: 35%;
-        padding: 0;
     }
     .myform{
         width: 100%;
