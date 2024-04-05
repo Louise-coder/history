@@ -102,7 +102,7 @@
     flex-direction: column;
     background-color: lightgreen;
     width: 97%;
-    height: 70vh;
+    height: 80vh;
     margin: 1%;
     margin-top: 0;
     justify-content: center;
@@ -203,12 +203,16 @@
 /* star rating */
 .rating{
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20%;
     width: 100%;
     background-color: palegoldenrod;
+}
+.rating .stars{
+    display: flex;
+    flex-direction: row-reverse;
 }
 .rating input{
     display:none;
@@ -257,20 +261,59 @@
 }
 form h1{
     margin: 0;
-    padding-top: 5%;
 }
 form{
     background-color: lightblue;
     height: 85%;
     width: 90%;
 }
-form span{
+.input-group{
+    width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-field{
     display: block;
-    margin: 20px 0;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    outline: none;
+    padding-top: 0;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 10;
+}
+.input-label{
+    color: #777;
+}
+.input-error{
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    font-weight: 400;
+    color: red;
+    font-size: 10px;
+    transition: top 0.5s;
+}
+#rating-error{
+    left: 2px;
+    font-weight: 400;
+    color: red;
+    font-size: 10px;
+    transition: top 0.5s;
 }
 textarea{
-    width: 98%;
-    height: 10%;
+    display: block;
+    width: 100%;
+    border: 0;
+    border: 1px solid #555;
+    background: transparent;
+    outline: none;
+    padding-top: 0;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 10;
 }
 .addbutton{
     width: 100%;
@@ -295,7 +338,7 @@ textarea{
         padding: 4%;
         padding-top:0;
         width: 85vw;
-        height: 105vh;
+        height: 130vh;
     }
     .mycontent{
         display: flex;
@@ -303,6 +346,7 @@ textarea{
     }
     .pic{
         width: 100%;
+        height: 60%;
     }
     .myform{
         width: 100%;
