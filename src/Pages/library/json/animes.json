@@ -1,0 +1,58 @@
+[
+    {},
+    {
+        "title":"Horimiya S1",
+        "producer": "CloverWorks",
+        "year": 2021,
+        "episodes": 13,
+        "genres": ["shonen"],
+        "plateform": "Crunchyroll",
+        "synopsis": "Two very different people - an academically successful schoolgirl and a quiet loser schoolboy - meet and develop a friendship.",
+        "rating": "star5",
+        "img": "../img/horimiya.webp"
+    },
+    {
+        "title":"Demon Slayer S1",
+        "producer": "ufotable",
+        "year": 2019,
+        "episodes": 26,
+        "genres": ["shonen"],
+        "plateform": "ADN",
+        "synopsis": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+        "rating": "star5",
+        "img": "../img/demonslayer.jpg"
+    },
+    {
+        "title":"My Hero Academia S1",
+        "producer": "Bones",
+        "year": 2016,
+        "episodes": 13,
+        "genres": ["shonen"],
+        "plateform": "Netflix",
+        "synopsis": "",
+        "rating": "star4",
+        "img": "../img/myheroacademia.webp"
+    },
+    {
+        "title":"7 Deadly Sins S1",
+        "producer": "A-1 Pictures",
+        "year": 2014,
+        "episodes": 24,
+        "genres": ["shonen"],
+        "plateform": "ADN",
+        "synopsis": "The story of the Seven Deadly Sins, a group of warriors who were wrongly accused of a crime they didn't commit and went on a quest to vindicate themselves.",
+        "rating": "star2",
+        "img": "../img/7deadlysins.webp"
+    },
+    {
+        "title":"Erased",
+        "producer": "A-1 Pictures",
+        "year": 2016,
+        "episodes": 12,
+        "genres": ["shonen"],
+        "plateform": "ADN",
+        "synopsis": "29-year-old Satoru Fujinuma is sent back in time 18 years to prevent the events leading to his mother's death, which began with a series of kidnappings while he was in 5th grade.",
+        "rating": "star3",
+        "img": "../img/erased.jpg"
+    }
+]
