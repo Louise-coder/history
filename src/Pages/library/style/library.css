@@ -1,0 +1,225 @@
+/* NAVBAR 1 */
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    margin: 1%;
+    margin-bottom: 0px;
+    justify-content: left;
+}
+.navigation1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    justify-content: left;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.navigation1 li{
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid;
+    padding-top: 15px;
+    border: 0;
+}
+.navigation1 .active{
+    background-color: #11162b;
+}
+.navigation1 .non-active{
+    background-color:  #141a33;
+}
+.navigation1 .non-active a{
+    color: white;
+    text-decoration: none;
+}
+.navigation1 .non-active a:hover{
+    cursor: pointer;
+    color: black;
+}
+.addbutton{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+.addbutton button a {
+    text-decoration: none; /* Supprimer le soulignement */
+    color: inherit; /* Utiliser la couleur héritée */
+}
+  
+.addbutton button a:hover {
+    text-decoration: none; /* Assurez-vous que le soulignement est supprimé au survol */
+    color: inherit; /* Utiliser la couleur héritée au survol */
+}
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    padding: .5em 1.5em;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(0, 130, 40);
+    box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+    letter-spacing: 0.08em;
+    border-radius: 20em;
+    cursor: pointer;
+    transition: .5s;
+}
+.cssbuttons-io-button:hover {
+    filter: brightness(1.2);
+    color: rgb(0, 0, 0, .5);
+}
+.cssbuttons-io-button:active {
+    transition: 0s;
+    transform: rotate(-10deg);
+}
+/* CONTENT */
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #11162b;
+    width: 97%;
+    margin: 1%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.buttons2{
+    width: 100%;
+}
+.navigation2{
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-evenly;
+}
+.navigation2 li{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border: 0;
+}
+.navigation2 .active{
+    font-weight: bold;
+    color: #056cc7e1;
+    border-bottom: 2px solid #056cc7e1;
+}
+.navigation2 .non-active a{
+    text-decoration: none;
+    color: #056cc7e1;
+}
+.navigation2 .non-active a:hover{
+    cursor: pointer;
+    color: #056cc7e1;
+}
+
+/* CARD */
+.mycontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height: 100%;
+    width: 95%;
+    margin: 2%;
+    margin-top: 0;
+    background-color:  #111422b1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 120px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card .picture{
+    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    padding: 16px;
+}
+.card-content h3{
+    margin: 0;
+}
+/* star rating */
+.rating{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    padding: 7px;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.rating .bef:before{
+    content: '\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display:block;
+    font-size: 20px;
+    color: black;
+}
+.rating .af:before{
+    content: '\f005';
+    font-family: FontAwesome;
+    display:block;
+    font-size: 20px;
+    color: gold;
+    top: -20px;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: grey;
+    color:white;
+    text-decoration: none;
+    border-radius: 10px;
+}

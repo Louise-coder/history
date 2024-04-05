@@ -1,5 +1,16 @@
+/* Style for the Home page */
+
+
+/*-----------------------------------*\
+               GENERAL
+\*-----------------------------------*/
+
+/* typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* colors */
+
+/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +18,40 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*-----------------------------------*\
+               HEADER
+\*-----------------------------------*/
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 0 5%;
+    padding: 20px 5%;
     position: absolute;
+    top: 0;
+    height: 150px;
     width: 100%;
     z-index: 100;
 }
+/* principal title */
 header h1 {
     font-size: 40px;
     color: white;
 }
+header img {
+    height: 90px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: transform 0.3s ease;
+}
+header img:hover {
+    transform: scale(1.1);
+}
 header nav {
     display: flex;
+    margin-left: auto; 
+    margin-bottom: 10px;
     gap: 30px;
 }
 header nav a {
@@ -44,10 +73,14 @@ header nav:hover > a:not(:hover) {
     background: none;
 }
 
+/*-----------------------------------*\
+             MAIN CONTENT
+\*-----------------------------------*/
+/* Parallax Banner */
 .home {
     display: flex;
     height: 100dvh;
-    background: linear-gradient(to top,  #0f121f 30%, #0f121f);
+    background:  #0f121f;
     position: relative;
     overflow: hidden;
 }
@@ -59,53 +92,168 @@ header nav:hover > a:not(:hover) {
     pointer-events: none;
 }
 
-.home .title {
+.home .title { /* à enlever ? */
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 25%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 75px;
+    font-size: 80px;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.home .start {
+.home .button {
     position: absolute;
-    top: 50%;
-    left: 30%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    top: 35%;
+    left: 23%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff80;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+}
+.home .button a {
+    text-decoration: none; /* Supprimer le soulignement */
+    color: inherit; /* Utiliser la couleur héritée */
+}
+  
+.home .button a:hover {
+    text-decoration: none; /* Assurez-vous que le soulignement est supprimé au survol */
+    color: inherit; /* Utiliser la couleur héritée au survol */
 }
 
-.home .start .button {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #DDB97F;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.home .button:hover,
+.home .button:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+        0 0 100px #008cff;
 }
 
-.home .start .button:hover {
-    background-color: #C8A064;
-}
-
-.about {
+/* Features and CVs */
+.features-and-cvs {
     padding: 50px;
     background: #0f121f;
     color: white;
     position: relative;
-    z-index: 100;
-}
-.about h1 {
-    font-size: 40px;
+    z-index: 50;
 }
 
+.features-and-cvs h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding: auto;
+}
+
+/* Section For What ? */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    padding: 20px;
+    background-color: #1a1d2b;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Section About us */
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-grow: 0; /* Ne pas autoriser la boîte à grossir */
+    flex-shrink: 0; /* Ne pas autoriser la boîte à rétrécir */
+    width: 300px; /* Définir une largeur fixe pour chaque boîte */    
+    margin: 10px; /* Espacement entre les boîtes */
+    margin: 100px;
+    justify-content: center;
+    align-items: center; /* Centrer le contenu verticalement */
+    text-align: center; 
+    background:  #1a1d2b;
+    border: 1px solid black; /* Ajout de 'solid' */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modification de la couleur de l'ombre */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #2e3457; /* Changement de couleur au survol */
+}
+
+.box img {
+    border-radius: 50%;
+}
+
+/* Styles for Louise's image */
+.louise-image {
+    width: 110%; 
+}
+  
+/* Styles for Essmay's image */
+.essmay-image {
+    width: 98%; 
+}
+
+.box p {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+
+.box .title {
+    color: white;
+    background: #131624;
+    font-size: 15px;
+    font-weight: 300;
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+ 
+/*-----------------------------------*\
+                FOOTER
+\*-----------------------------------*/
 footer{
     text-align: center;
-    background: linear-gradient(to top,  #0f121f 30%, #0f121f);
+    background: #0f121f;
     color: white;
 }
 
