@@ -1,5 +1,5 @@
 // FUNCTION TO DISPLAY ONE WEBTOON
-function display_webtoon(myWebtoon, i){
+function display_webtoon(myWebtoon, id){
     const mycontent = document.querySelector(".mycontent");
     let newCard = document.createElement("div");
     newCard.classList.add("card");
@@ -13,10 +13,10 @@ function display_webtoon(myWebtoon, i){
     let rating = document.createElement("div");
     rating.classList.add("rating");
     let myrating = parseInt(myWebtoon.rating[4]);
-    for(let j=i*5; j>(i-1)*5; j--){
+    for(let j=id*5; j>(id-1)*5; j--){
         let label = document.createElement("label");
         label.setAttribute("for", "star"+j);
-        if (j <= myrating+5*(i-1)){
+        if (j <= myrating+5*(id-1)){
             label.classList = "af";
         }
         else{
@@ -24,8 +24,12 @@ function display_webtoon(myWebtoon, i){
         }
         rating.appendChild(label);
     }
+    const searchParams = new URLSearchParams();
+    searchParams.append("id", id);
+    searchParams.append("type", "webtoon");
+    const paramString = searchParams.toString();
     let link = document.createElement('a');
-    link.setAttribute("href", 'card');
+    link.setAttribute("href", "../content/content.html?"+paramString);
     link.classList.add('btn');
     link.textContent = 'See more';
     content.appendChild(title);
@@ -49,8 +53,10 @@ fetch('./json/webtoons.json').then(function(response){
 const LSwebtoonID = localStorage.getItem("webtoon_id");
 if(LSwebtoonID !== null){
     const webtoonID = parseInt(LSwebtoonID);
-    for(let i=1; i <= webtoonID; i++){
-        const myWebtoon = JSON.parse(localStorage.getItem("webtoon"+i));
-        display_webtoon(myWebtoon, i);
+    for(let i=10; i <= webtoonID; i++){
+        myWebtoon = localStorage.getItem("webtoon"+i);
+        if (myWebtoon!==null){
+            display_webtoon(JSON.parse(myWebtoon), i);
+        }
     }
 }

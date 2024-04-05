@@ -1,5 +1,5 @@
-// FUNCTION TO DISPLAY ONE SERIE
-function display_movie(myMovie, i){
+// FUNCTION TO DISPLAY ONE MOVIE
+function display_movie(myMovie, id){
     const mycontent = document.querySelector(".mycontent");
     let newCard = document.createElement("div");
     newCard.classList.add("card");
@@ -13,10 +13,10 @@ function display_movie(myMovie, i){
     let rating = document.createElement("div");
     rating.classList.add("rating");
     let myrating = parseInt(myMovie.rating[4]);
-    for(let j=i*5; j>(i-1)*5; j--){
+    for(let j=id*5; j>(id-1)*5; j--){
         let label = document.createElement("label");
         label.setAttribute("for", "star"+j);
-        if (j <= myrating+5*(i-1)){
+        if (j <= myrating+5*(id-1)){
             label.classList = "af";
         }
         else{
@@ -24,8 +24,12 @@ function display_movie(myMovie, i){
         }
         rating.appendChild(label);
     }
+    const searchParams = new URLSearchParams();
+    searchParams.append("id", id);
+    searchParams.append("type", "movie");
+    const paramString = searchParams.toString();
     let link = document.createElement('a');
-    link.setAttribute("href", 'card');
+    link.setAttribute("href", "../content/content.html?"+paramString);
     link.classList.add('btn');
     link.textContent = 'See more';
     content.appendChild(title);
@@ -50,8 +54,10 @@ fetch('./json/movies.json').then(function(response){
 const LSmovieID = localStorage.getItem("movie_id");
 if(LSmovieID !== null){
     const movieID = parseInt(LSmovieID);
-    for(let i=1; i <= movieID; i++){
-        const myMovie = JSON.parse(localStorage.getItem("movie"+i));
-        display_movie(myMovie, i);
+    for(let i=10; i <= movieID; i++){
+        myMovie = localStorage.getItem("movie"+i);
+        if (myMovie!==null){
+            display_movie(JSON.parse(myMovie), i);
+        }
     }
 }

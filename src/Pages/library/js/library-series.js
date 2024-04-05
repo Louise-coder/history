@@ -1,5 +1,5 @@
 // FUNCTION TO DISPLAY ONE SERIE
-function display_serie(mySerie, i){
+function display_serie(mySerie, id){
     const mycontent = document.querySelector(".mycontent");
     let newCard = document.createElement("div");
     newCard.classList.add("card");
@@ -13,10 +13,10 @@ function display_serie(mySerie, i){
     let rating = document.createElement("div");
     rating.classList.add("rating");
     let myrating = parseInt(mySerie.rating[4]);
-    for(let j=i*5; j>(i-1)*5; j--){
+    for(let j=id*5; j>(id-1)*5; j--){
         let label = document.createElement("label");
         label.setAttribute("for", "star"+j);
-        if (j <= myrating+5*(i-1)){
+        if (j <= myrating+5*(id-1)){
             label.classList = "af";
         }
         else{
@@ -24,8 +24,12 @@ function display_serie(mySerie, i){
         }
         rating.appendChild(label);
     }
+    const searchParams = new URLSearchParams();
+    searchParams.append("id", id);
+    searchParams.append("type", "serie");
+    const paramString = searchParams.toString();
     let link = document.createElement('a');
-    link.setAttribute("href", 'card');
+    link.setAttribute("href", "../content/content.html?"+paramString);
     link.classList.add('btn');
     link.textContent = 'See more';
     content.appendChild(title);
@@ -50,8 +54,10 @@ fetch('./json/series.json').then(function(response){
 const LSserieID = localStorage.getItem("serie_id");
 if(LSserieID !== null){
     const serieID = parseInt(LSserieID);
-    for(let i=1; i <= serieID; i++){
-        const mySerie = JSON.parse(localStorage.getItem("serie"+i));
-        display_serie(mySerie, i);
+    for(let i=10; i <= serieID; i++){
+        mySerie = localStorage.getItem("serie"+i);
+        if (mySerie!==null){
+            display_serie(JSON.parse(mySerie), i);
+        }
     }
 }

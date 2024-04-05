@@ -1,5 +1,5 @@
-// FUNCTION TO DISPLAY ONE SERIE
-function display_manga(myManga, i){
+// FUNCTION TO DISPLAY ONE MANGA
+function display_manga(myManga, id){
     const mycontent = document.querySelector(".mycontent");
     let newCard = document.createElement("div");
     newCard.classList.add("card");
@@ -13,10 +13,10 @@ function display_manga(myManga, i){
     let rating = document.createElement("div");
     rating.classList.add("rating");
     let myrating = parseInt(myManga.rating[4]);
-    for(let j=i*5; j>(i-1)*5; j--){
+    for(let j=id*5; j>(id-1)*5; j--){
         let label = document.createElement("label");
         label.setAttribute("for", "star"+j);
-        if (j <= myrating+5*(i-1)){
+        if (j <= myrating+5*(id-1)){
             label.classList = "af";
         }
         else{
@@ -24,8 +24,12 @@ function display_manga(myManga, i){
         }
         rating.appendChild(label);
     }
+    const searchParams = new URLSearchParams();
+    searchParams.append("id", id);
+    searchParams.append("type", "manga");
+    const paramString = searchParams.toString();
     let link = document.createElement('a');
-    link.setAttribute("href", 'card');
+    link.setAttribute("href", "../content/content.html?"+paramString);
     link.classList.add('btn');
     link.textContent = 'See more';
     content.appendChild(title);
@@ -50,8 +54,10 @@ fetch('./json/mangas.json').then(function(response){
 const LSmangaID = localStorage.getItem("manga_id");
 if(LSmangaID !== null){
     const mangaID = parseInt(LSmangaID);
-    for(let i=1; i <= mangaID; i++){
-        const myManga = JSON.parse(localStorage.getItem("manga"+i));
-        display_manga(myManga, i);
+    for(let i=10; i <= mangaID; i++){
+        myManga = localStorage.getItem("manga"+i);
+        if (myManga!==null){
+            display_manga(JSON.parse(myManga), i);
+        }
     }
 }

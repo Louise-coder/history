@@ -1,5 +1,5 @@
 // FUNCTION TO DISPLAY ONE ANIME
-function display_anime(myAnime, i){
+function display_anime(myAnime, id){
     const mycontent = document.querySelector(".mycontent");
     let newCard = document.createElement("div");
     newCard.classList.add("card");
@@ -13,10 +13,10 @@ function display_anime(myAnime, i){
     let rating = document.createElement("div");
     rating.classList.add("rating");
     let myrating = parseInt(myAnime.rating[4]);
-    for(let j=i*5; j>(i-1)*5; j--){
+    for(let j=id*5; j>(id-1)*5; j--){
         let label = document.createElement("label");
         label.setAttribute("for", "star"+j);
-        if (j <= myrating+5*(i-1)){
+        if (j <= myrating+5*(id-1)){
             label.classList = "af";
         }
         else{
@@ -24,8 +24,12 @@ function display_anime(myAnime, i){
         }
         rating.appendChild(label);
     }
+    const searchParams = new URLSearchParams();
+    searchParams.append("id", id);
+    searchParams.append("type", "anime");
+    const paramString = searchParams.toString();
     let link = document.createElement('a');
-    link.setAttribute("href", 'card');
+    link.setAttribute("href", "../content/content.html?"+paramString);
     link.classList.add('btn');
     link.textContent = 'See more';
     content.appendChild(title);
@@ -49,8 +53,10 @@ fetch('./json/animes.json').then(function(response){
 const LSanimeID = localStorage.getItem("anime_id");
 if(LSanimeID !== null){
     const animeID = parseInt(LSanimeID);
-    for(let i=1; i <= animeID; i++){
-        const myAnime = JSON.parse(localStorage.getItem("anime"+i));
-        display_anime(myAnime, i);
+    for(let i=10; i <= animeID; i++){
+        myAnime = localStorage.getItem("anime"+i);
+        if (myAnime!==null){
+            display_anime(JSON.parse(myAnime), i);
+        }
     }
 }
