@@ -20,7 +20,8 @@ function get_rating(){
     return rating;
 }
 function set_id(content){
-    if (localStorage.getItem(content+"_id") === null){
+    let content_id = localStorage.getItem(content+"_id")
+    if (content_id === null || parseInt(content_id) < 10){
         localStorage.setItem(content+"_id", "10")
     }
     else{
@@ -34,7 +35,7 @@ add_manga.onclick = () => {
         year: year.value,
         volume: volume.value,
         chapters: chapters.value,
-        genre: get_genres(),
+        genres: get_genres(),
         synopsis: synopsis.value,
         rating: get_rating(),
     }

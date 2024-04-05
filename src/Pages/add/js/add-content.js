@@ -3,7 +3,7 @@ const yearSelect = document.getElementById("year");
 
 function populateYears(){
     let year = new Date().getFullYear();
-    for(let i = 0; i < 101; i++){
+    for(let i = 0; i < 150; i++){
         const option = document.createElement("option");
         option.textContent = year - i;
         yearSelect.appendChild(option);
