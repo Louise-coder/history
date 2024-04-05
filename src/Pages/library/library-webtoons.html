@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <title>HiStory</title>
+        <style>
+            @import url("../style/global.css");
+            @import url("style/library.css");
+        </style>
+    </header>
+    <body>
+        <!-- BANNER -->
+        <div class="banner">
+            <h1><a class="title" href="../home.html">HiStory</a></h1>
+        </div>
+        <div class="buttons">
+            <!-- NAVIGATION STREAMING / READING -->
+            <ul class="navigation1">
+                <li class="non-active"><a href="library-streaming.html">STREAMING</a></li>
+                <li class="active">READING</li>
+            </ul>
+            <!-- ADD BUTTON -->
+            <div class="addbutton">
+                <button title="Add" class="cssbuttons-io-button">
+                    <svg height="10" width="10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path></svg>
+                    <span><a href="../add/add-reading.html">Add</a></span>
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="buttons2">
+                <!-- NAVIGATION BOOKS / MANGAS -->
+                <ul class="navigation2">
+                    <li class="non-active"><a href="library-reading.html">Books</a></li>
+                    <li class="non-active"><a href="library-mangas.html">Mangas</a></li>
+                    <li class="active">Webtoons</li>
+                </ul>
+            </div>
+            <!-- LIBRARIES -->
+            <div class="mycontent">
+                <div class="card">
+                    <div class="picture"></div>
+                    <div class="card-content">
+                        <h3>Title</h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1">
+                            <label for="star1"></label>
+                            <input type="radio" name="star" id="star2" checked>
+                            <label for="star2"></label>
+                            <input type="radio" name="star" id="star3">
+                            <label for="star3"></label>
+                            <input type="radio" name="star" id="star4">
+                            <label for="star4"></label>
+                            <input type="radio" name="star" id="star5">
+                            <label for="star5"></label>
+                        </div>
+                        <a href="card" class="btn">See more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- SCRIPT JS -->
+       <script src="js/library.js"></script>
+       <!-- FOOTER -->
+       <footer class="text-center" id="footer">
+           <hr>
+           <br>
+           Copyright &copy; Université Paris-Cité - All rights reserved
+           <br>
+           Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
+       </footer>
+    </body>
+</html>
