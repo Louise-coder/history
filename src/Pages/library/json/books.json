@@ -1,0 +1,47 @@
+[
+    {},
+    {
+        "title": "The Fault in Our Stars",
+        "author": "John Green",
+        "year": 2012,
+        "pages": 313,
+        "chapters": 25,
+        "genres": ["novel"],
+        "synopsis": "The story is narrated by Hazel Grace Lancaster, a 16-year-old girl with thyroid cancer that has affected her lungs. Hazel is forced by her parents to attend a support group where she subsequently meets and falls in love with 17-year-old Augustus Waters, an ex-basketball player, amputee, and survivor of osteosarcoma.",
+        "rating": "star4",
+        "img":"../img/thefaultinourstars.jpg"
+    },
+    {
+        "title": "We Were Liars",
+        "author": "E. Lockhart",
+        "year": 2014,
+        "pages": 256,
+        "chapters": 82,
+        "genres": ["novel"],
+        "synopsis": "The story of a 17 year old girl from a wealthy family. Cady Sinclair spends her summers on a private island. After suffering a terrible accident she struggles to remember events that happened in her past.",
+        "rating": "star5",
+        "img":"../img/wewereliars.jpg"
+    },
+    {
+        "title": "The Waste Land",
+        "author": "T. S. Eliot",
+        "year": 1922,
+        "pages": 15,
+        "chapters": 5,
+        "genres": ["poetry"],
+        "synopsis": "The Waste Land by T.S. Eliot is a modern poem that explores despair and societal fragmentation in the aftermath of war. Structured into five parts, it employs a variety of poetic techniques to depict the desolation of the era.",
+        "rating": "star2",
+        "img":"../img/thewasteland.jpg"
+    },
+    {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "year": 1945,
+        "pages": 112,
+        "chapters": 10,
+        "genres": ["novel"],
+        "synopsis": "Animal Farm by George Orwell is a political allegory that depicts the rise and fall of a group of farm animals who overthrow their human owner to establish their own egalitarian society, only to see it corrupted into a dictatorship by the pigs who lead the rebellion.",
+        "rating": "star2",
+        "img":"../img/animalfarm.jpg"
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {},
+    {
+        "title":"Stranger Things S1",
+        "producer":"The Duffer Brothers",
+        "year": 2016,
+        "episodes": 8,
+        "genres": ["action","horror"],
+        "plateform": "Netflix",
+        "synopsis": "When a boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+        "rating": "star3",
+        "img": "../img/strangerthings.jpg"
+    },
+    {
+        "title":"The Good Doctor S1",
+        "producer":"Sony Pictures Television",
+        "year": 2017,
+        "episodes": 18,
+        "genres": ["action","romance"],
+        "plateform": "Netflix",
+        "synopsis": "Shaun Murphy, a young surgeon with autism and Savant syndrome, is recruited into the surgical unit of a prestigious hospital.",
+        "rating": "star4",
+        "img": "../img/thegooddoctor.jpg"
+    },
+    {
+        "title":"Descendants of the Sun",
+        "producer": "KBS Drama Production",
+        "year": 2016,
+        "episodes": 16,
+        "genres": ["action", "drama", "romance"],
+        "plateform": "Netflix",
+        "synopsis": "This drama tells of the love story that develops between a surgeon and a special forces officer.",
+        "rating": "star4",
+        "img": "../img/descendantsofthesun.jpg"
+    }
+]

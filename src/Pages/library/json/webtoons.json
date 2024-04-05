@@ -1,0 +1,53 @@
+[
+    {},
+    {
+        "title": "Solo Leveling",
+        "author": "Chugong",
+        "year": 2018,
+        "chapters": 179,
+        "genres": ["action", "drama", "horror"],
+        "synopsis": "In a world of gifted hunters and monsters, a weak hunter Sung Jinwoo gains extraordinary powers through a mysterious program, leading him to become one of the strongest hunters and conquering even the strongest dungeons.",
+        "rating": "star4",
+        "img": "../img/sololeveling.jpg"
+    },
+    {
+        "title": "Marry My Husband",
+        "author": "sungsojak",
+        "year": 2022,
+        "chapters": 58,
+        "genres": ["drama", "romance"],
+        "synopsis": "A story about Ji-won who after being killed by her husband who had an affair with her best friend, goes back 10 years in the past and has a chance to change her fate.",
+        "rating": "star5",
+        "img": "../img/marrymyhusband.webp"
+    },
+    {
+        "title": "The Kiss Bet",
+        "author": "Ingrid Ochoa",
+        "year": 2019,
+        "chapters": 183,
+        "genres": ["comedy","romance"],
+        "synopsis": "For eighteen-year-old SARA LIN, one simple bet will change her life forever.",
+        "rating": "star3",
+        "img": "../img/thekissbet.jpg"
+    },
+    {
+        "title": "Lookism",
+        "author": "Taejun Pak",
+        "year": 2017,
+        "chapters": 485,
+        "genres": ["action","drama"],
+        "synopsis": "In a society that favors good looks, a high school outcast leads a double life switching between his two bodies that are polar opposites in appearance.",
+        "rating": "star4",
+        "img": "../img/lookism.jpg"
+    },
+    {
+        "title": "Lore Olympus",
+        "author": "Rachel Smythe",
+        "year": 2018,
+        "chapters": 271,
+        "genres": ["fantasy","romance"],
+        "synopsis": "Witness what the gods do…after dark. The friendships and the lies, the gossip and the wild parties, and of course, forbidden love. Because it turns out, the gods aren't so different from us after all, especially when it comes to their problems.",
+        "rating": "star2",
+        "img": "../img/loreolympus.jpg"
+    }
+]

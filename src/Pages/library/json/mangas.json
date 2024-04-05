@@ -1,0 +1,47 @@
+[
+    {},
+    {
+        "title": "Nana",
+        "author": "Ai Yazawa",
+        "year": 2000,
+        "volume": 1,
+        "chapters": 21,
+        "genres": ["josei"],
+        "synopsis": "Two ostensibly opposite women, both named Nana, become roommates in Tokyo and grow inseparable. However, their relationship is jeopardized as the harsh realities of adult life take shape.",
+        "rating": "star2",
+        "img": "../img/nana.jpg"
+    },
+    {
+        "title": "The Promised Neverland",
+        "author": "Kaiu Shirai",
+        "year": 2016,
+        "volume": 7,
+        "chapters": 9,
+        "genres": ["shonen"],
+        "synopsis": "When three gifted kids at an isolated idyllic orphanage discover the secret and sinister purpose they were raised for, they look for a way to escape from their evil caretaker and lead the other children in a risky escape plan.",
+        "rating": "star4",
+        "img": "../img/thepromisedneverland.jpg"
+    },
+    {
+        "title": "Demon Slayer",
+        "author": "Koyoharu Gotouge",
+        "year": 2016,
+        "volume": 8,
+        "chapters": 9,
+        "genres": ["shonen"],
+        "synopsis": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+        "rating": "star5",
+        "img": "../img/demonslayermanga.webp"
+    },
+    {
+        "title": "Hiyokoi",
+        "author": "Moe Yukimaru",
+        "year": 2009,
+        "volume": 10,
+        "chapters": 5,
+        "genres": ["shojo"],
+        "synopsis": "Hiyori, a small and timid girl, goes to school for the first time in a year since an accident left her hospitalized. Follow her as she struggles with her social skills, tries to make friends and maybe even a little bit more...?",
+        "rating": "star3",
+        "img": "../img/hiyokoi.jpg"
+    }
+]

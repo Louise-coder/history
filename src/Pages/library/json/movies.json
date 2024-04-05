@@ -1,0 +1,53 @@
+[
+    {},
+    {
+        "title": "Dune: Part One",
+        "producer": "Legendary Pictures",
+        "year": 2021,
+        "genre": ["action","drama","romance"],
+        "plateform": "Prime Video",
+        "synopsis": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
+        "rating": "star4",
+        "img": "../img/dune.jpg"
+    },
+    {
+        "title": "Iron Man 1",
+        "producer": "Marvel Studios",
+        "year": 2008,
+        "genre": ["action","scifi"],
+        "plateform": "Prime Video",
+        "synopsis": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+        "rating": "star3",
+        "img": "../img/ironman.jpg"
+    },
+    {
+        "title": "Ponyo",
+        "producer": "Studio Ghibli",
+        "year": 2008,
+        "genre": ["action","scifi"],
+        "plateform": "Netflix",
+        "synopsis": "A five-year-old boy develops a relationship with Ponyo, a young goldfish princess who longs to become a human after falling in love with him.",
+        "rating": "star5",
+        "img": "../img/ponyo.jpg"
+    },
+    {
+        "title": "Dragon 1",
+        "producer": "DreamWorks Animation",
+        "year": 2010,
+        "genre": ["action","fantasy","scifi"],
+        "plateform": "Prime Video",
+        "synopsis": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+        "rating": "star5",
+        "img": "../img/dragon.jpg"
+    },
+    {
+        "title": "Weathering With You",
+        "producer": "CoMix Wave Films",
+        "year": 2019,
+        "genre": ["action","fantasy","romance"],
+        "plateform": "Prime Video",
+        "synopsis": "Set during a period of exceptionally rainy weather, high-school boy Hodaka Morishima runs away from his troubled rural home to Tokyo and befriends an orphan girl who can manipulate the weather.",
+        "rating": "star3",
+        "img": "../img/weatheringwithyou.jpg"
+    }
+]

@@ -37,7 +37,6 @@ function display_anime(myAnime, i){
 }
 
 // Display all animes in JSON file
-let animesList = [];
 fetch('./json/animes.json').then(function(response){
     return response.json();
 }).then(function(obj){
