@@ -16,30 +16,57 @@
     padding: 0px;
     margin-bottom: 0px;
 }
-.navigation1 li{
+.navigation1 li {
+    position: relative; 
     height: 30px;
     width: 200px;
     font-weight: bold;
     text-align: center;
-    border: 2px solid;
     padding-top: 15px;
-    border: 0;
+    border: none; 
 }
-.navigation1 .active{
+.navigation1 .active {
     background-color: #11162b;
 }
-.navigation1 .non-active{
-    background-color:  #141a33;
+.navigation1 .non-active {
+    background-color: #161d38;
+    transition: background-color 0.3s ease; 
+    overflow: hidden; /* Assurer que les pseudo-éléments ne dépassent pas les limites de l'élément parent */
 }
-.navigation1 .non-active a{
+.navigation1 li::before,
+.navigation1 li::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
+}
+.navigation1 li::before {
+    top: -2px;
+    left: 0; 
+    width: 100%; 
+    height: 2px;
+    z-index: 1;
+}
+.navigation1 li::after {
+    top: 0; 
+    right: -2px;
+    width: 2px;
+    height: calc(100% + 4px); 
+    z-index: 1; 
+}
+.navigation1 .non-active a {
     color: white;
     text-decoration: none;
 }
-.navigation1 .non-active a:hover{
+.navigation1 .non-active a:hover {
     cursor: pointer;
     color: black;
 }
-
+.navigation1 .non-active:hover::before,
+.navigation1 .non-active:hover::after {
+    background-color: rgb(86, 86, 86);
+    box-shadow: 0 0 5px  rgb(86, 86, 86), 0 0 10px  rgb(86, 86, 86), 0 0 15px  rgb(86, 86, 86); /* Ajoute un effet de lueur */
+}
 /* MAIN */
 .main{
     display: flex;
@@ -69,6 +96,7 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
     border: 0;
+    z-index: 10;
 }
 .navigation2 .active{
     font-weight: bold;
