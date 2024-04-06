@@ -17,39 +17,172 @@ body {
     color: white;
 }
 
+/* Button */
+.addbutton{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+.addbutton button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+  
+.addbutton button a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    padding: .5em 1.5em;
+    color: white;
+    background: linear-gradient(0deg, #DDB97F, #e0b879); /* Utiliser la couleur #DDB97F pour le gradient */
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #a58756;
+    box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+    letter-spacing: 0.08em;
+    border-radius: 20em;
+    cursor: pointer;
+    transition: .5s;
+}
+.cssbuttons-io-button:hover {
+    filter: brightness(1.2);
+    color: rgb(0, 0, 0, .5);
+}
+.cssbuttons-io-button:active {
+    transition: 0s;
+    transform: rotate(-10deg);
+}
+
+.clearbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 11px; 
+    text-decoration: none;
+    padding: .5em 1em; 
+    color: black; 
+    background-color: rgb(83, 0, 0); 
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(83, 0, 0);
+    box-shadow: 0 .5em .5em -.4em rgba(0, 0, 0, .5);
+    letter-spacing: 0.08em;
+    border-radius: 20em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.clearbutton:hover {
+    filter: brightness(1.2);
+    background: red;
+    color: white;
+}
+
+.clearbutton:active {
+    transition: 0s;
+    transform: rotate(-10deg);
+}
+
+
+.backbutton{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(0deg, #DDB97F, #d8cab2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+  
+.arrow path {
+    fill: white;
+}
+  
+.text {
+    font-size: 0.7em;
+    width: 100px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -18px;
+    opacity: 0;
+    transition-duration: .7s;
+}
+  
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: .7s;
+}
+  
+.Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
 
 /*-----------------------------------*\
                 BANNER
 \*-----------------------------------*/
-.banner{
+.banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100px;
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
 }
-.title {
-    color: white;
-    font-size: 60px;
-    text-shadow: black 2px 2px 2px;
-    font-weight: bolder;
-    font-style: italic;
-    text-decoration: none;
-    color: inherit;
+
+.logo {
+    width: 200px; /* Taille de votre logo */
+    height: auto; /* Assurez-vous que le ratio est conservé */
     transition: transform 0.3s ease;
 }
-.banner h1:hover,
-.banner h1:focus {
-    transform: scale(1.1); /* Agrandir le titre au survol */
+
+.banner:hover .logo {
+    transform: scale(1.1); /* Agrandir le logo au survol */
     cursor: pointer;
     background: #008cff33;
-    width: 230px;
     border-radius: 20px;
     border: 1px solid #008cff;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-        0 0 100px #008cff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
 }
 
 
