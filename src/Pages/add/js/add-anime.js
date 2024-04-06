@@ -1,3 +1,4 @@
+/* FORM VALIDATION */
 function validateInput(field_name){
     let inputError = document.getElementById(field_name+"-error");
     if(field_name === "rating"){
