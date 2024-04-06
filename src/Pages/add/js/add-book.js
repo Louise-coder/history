@@ -1,3 +1,38 @@
+/* FORM VALIDATION */
+function validateInput(field_name){
+    let inputError = document.getElementById(field_name+"-error");
+    if(field_name === "rating"){
+        let rating = get_rating();
+        if(rating === "0"){
+            inputError.innerHTML = "On a scale of 1 to 5, how much do you want to watch it?";
+            return false;
+        }
+    }
+    else{
+        let inputField = document.getElementById(field_name+"-field");
+        if(field_name === "pages" || field_name === "chapters"){
+            if(!inputField.value.match(/^[0-9]+$/) || inputField.value === ""){
+                inputError.innerHTML = "Please enter a valid number of "+field_name+".";
+                inputField.style.borderBottomColor = "red";
+                inputError.style.top = "105%";
+                return false;
+            }
+        }
+        else{
+            if(!inputField.value.match(/^[A-Za-z0-9 -']+$/) || inputField.value === ""){
+                inputError.innerHTML = "Please enter a valid "+field_name+".";
+                inputField.style.borderBottomColor = "red";
+                inputError.style.top = "105%";
+                return false;
+            }
+        }
+        inputField.style.borderBottomColor = "green";
+    }
+    inputError.innerHTML = ""
+    inputError.style.top = "100%";
+    return true;
+}
+
 /* Local Storage */
 function get_genres(){
     genres = [];
@@ -29,25 +64,36 @@ function set_id(content){
     }
 }
 add_book.onclick = () => {
-    let content = {
-        title: title.value,
-        author: author.value,
-        year: year.value,
-        pages: pages.value,
-        chapters: chapters.value,
-        genres: get_genres(),
-        synopsis: synopsis.value,
-        rating: get_rating(),
-    }
-    const imgPath = document.querySelector('input[type=file]').files[0];
-    const reader = new FileReader();
-    reader.addEventListener("load", function () {
-        set_id("book");
-        content.img = reader.result;
-        localStorage.setItem("book"+localStorage.getItem("book_id"), JSON.stringify(content));
-        //document.location.reload();
-    }, false);
-    if(imgPath) {
-        reader.readAsDataURL(imgPath);
+    let valTitle = validateInput("title");
+    let valAuthor = validateInput("author");
+    let valPages = validateInput("pages");
+    let valChap = validateInput("chapters");
+    let valSyn = validateInput("synopsis");
+    let valRat = validateInput("rating");
+    if(valTitle && valAuthor && valPages && valChap && valSyn && valRat){
+        let content = {
+            title: document.getElementById("title-field").value,
+            author: document.getElementById("author-field").value,
+            year: document.getElementById("year").value,
+            pages: document.getElementById("pages-field").value,
+            chapters: document.getElementById("chapters-field").value,
+            genres: get_genres(),
+            synopsis: document.getElementById("synopsis-field").value,
+            rating: get_rating(),
+        }
+        const imgPath = document.querySelector('input[type=file]').files[0];
+        const reader = new FileReader();
+        reader.addEventListener("load", function () {
+            set_id("book");
+            content.img = reader.result;
+            localStorage.setItem("book"+localStorage.getItem("book_id"), JSON.stringify(content));
+            //document.location.reload();
+        }, false);
+        if(imgPath) {
+            reader.readAsDataURL(imgPath);
+        }
+        else{
+            alert("Please upload a picture!");
+        }
     }
 }
