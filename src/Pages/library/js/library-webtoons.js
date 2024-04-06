@@ -60,3 +60,13 @@ if(LSwebtoonID !== null){
         }
     }
 }
+// CLEAR LS
+clear.onclick = () =>{
+    var result = confirm("Are you sure?");
+    if(result == false){
+        event.preventDefault();
+        return;
+    }
+    localStorage.clear();
+    document.location.reload();
+}
