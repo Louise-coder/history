@@ -13,7 +13,9 @@
     <body>
         <!-- BANNER -->
         <div class="banner">
-            <h1><a class="title" href="../home.html">HiStory</a></h1>
+            <a href="../home.html">
+                <img src="../img/history_logo.webp" class="logo" alt="History Logo">
+            </a>
         </div>
         <div class="buttons">
             <ul class="navigation1">
@@ -48,42 +50,51 @@
                         </label>
                     </div>
                     <div class="rating">
-                        <input type="radio" name="star" id="star1">
-                        <label for="star1"></label>
-                        <input type="radio" name="star" id="star2">
-                        <label for="star2"></label>
-                        <input type="radio" name="star" id="star3">
-                        <label for="star3"></label>
-                        <input type="radio" name="star" id="star4">
-                        <label for="star4"></label>
-                        <input type="radio" name="star" id="star5">
-                        <label for="star5"></label>
+                        <div class="stars">
+                            <input type="radio" name="star" id="star5">
+                            <label for="star5"></label>
+                            <input type="radio" name="star" id="star4">
+                            <label for="star4"></label>
+                            <input type="radio" name="star" id="star3">
+                            <label for="star3"></label>
+                            <input type="radio" name="star" id="star2">
+                            <label for="star2"></label>
+                            <input type="radio" name="star" id="star1">
+                            <label for="star1"></label>
+                        </div>
+                        <span id="rating-error"></span>
                     </div>
                 </div>
                 <div class="myform">
                     <form>
                         <h1>Book</h1>
-                        <span>
-                            <label for="title">Title*: </label>
-                            <input type="text" id="title" name="book_title">
-                        </span>
-                        <span>
-                            <label for="author">Author: </label>
-                            <input type="text" id="author" name="book_author">
-                        </span>
-                        <span>
-                            <label for="year">Year*:</label>
+                        <div class="input-group">
+                            <label id="title-label" class="input-label">TITLE</label>
+                            <input type="text" id="title-field" class="input-field" name="book_title">
+                            <span id="title-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="author-label" class="input-label">AUTHOR</label>
+                            <input type="text" id="author-field" class="input-field" name="book_author">
+                            <span id="author-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="year-label" class="input-label">YEAR</label>
                             <select name="year" id="year"></select>
-                        </span>
-                        <span>
-                            <label for="pages">Number of pages*:</label>
-                            <input type="text" id="pages" name="book_pages" size="3">
-                        </span>
-                        <span>
-                            <label for="chapters">Number of chapters:</label>
-                            <input type="text" id="chapters" name="book_chapters" size="3">
-                        </span>
-                        <span>
+                        </div>
+                        <div class="input-group">
+                            <label id="pages-label" class="input-label">NB OF PAGES</label>
+                            <input type="text" id="pages-field" class="input-field" name="book_pages">
+                            <span id="pages-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="chapters-label" class="input-label">NB OF CHAPTER</label>
+                            <input type="text" id="chapters-field" class="input-field" name="book_chapters">
+                            <span id="chapters-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="genres-label" class="input-label">GENRES</label>
+                            <br>
                             <input type="checkbox" id="drama" name="genre" value="drama">
                             <label for="drama">Drama</label>
                             <input type="checkbox" id="novel" name="genre" value="novel">
@@ -92,15 +103,16 @@
                             <label for="poetry">Poetry</label>
                             <input type="checkbox" id="argumentation" name="genre" value="argumentation">
                             <label for="argumentation">Argumentation</label>
-                        </span>
-                        <span>
-                            <label for="synopsis">Synopsis:</label><br>
-                            <textarea id="synopsis" name="book_synopsis"></textarea>
-                        </span>
-                        <div class="addbutton">
-                            <button type="button" id="add_book" value="submitted" onClick="">Add</button>
                         </div>
-                        <button type="button" id="clear">clear LS</button>
+                        <div class="input-group">
+                            <label id="synopsis-label" class="input-label">SYNOPSIS</label>
+                            <textarea id="synopsis-field" name="book_synopsis"></textarea>
+                            <span id="synopsis-error" class="input-error"></span>
+                        </div>
+                        <div class="addbutton">
+                            <button id="clear_form" title="clear" class="clearbutton">Clear Form</button>
+                            <button id="add_book" title="Add" class="cssbuttons-io-button">Add</button>
+                        </div>
                     </form>
                     <!-- SCRIPTS JS -->
                     <script src="js/add-content.js"></script>
