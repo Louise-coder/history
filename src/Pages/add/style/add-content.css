@@ -197,7 +197,8 @@
     position: relative;
     display:block;
     font-size: 40px;
-    color: black;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 2px 5px rgba(126, 123, 123, 0.727);
 }
 .rating label:after{
     content: '\f005';
