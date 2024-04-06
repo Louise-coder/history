@@ -170,20 +170,23 @@ body {
 }
 
 .logo {
-    width: 200px; /* Taille de votre logo */
-    height: auto; /* Assurez-vous que le ratio est conservé */
+    width: 150px; 
+    margin-top: 10%;
+    padding: 5px;
+    height: auto; 
     transition: transform 0.3s ease;
 }
 
 .banner:hover .logo {
-    transform: scale(1.1); /* Agrandir le logo au survol */
+    transform: scale(1.1); 
     cursor: pointer;
     background: #008cff33;
-    border-radius: 20px;
+    border-radius: 100%;
     border: 1px solid #008cff;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
     box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
 }
+
 
 
 /*-----------------------------------*\
