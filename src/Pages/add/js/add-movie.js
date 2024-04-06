@@ -69,28 +69,31 @@ add_movie.onclick = () => {
     let valSyn = validateInput("synopsis");
     let valRat = validateInput("rating");
     if(valTitle && valProd && valSyn && valRat){
-        let content = {
-            title: document.getElementById("title-field").value,
-            producer: document.getElementById("producer-field").value,
-            year: document.getElementById("year").value,
-            genres: get_genres(),
-            plateform: document.getElementById("plateform").value,
-            synopsis: document.getElementById("synopsis-field").value,
-            rating: get_rating(),
-        }
-        const imgPath = document.querySelector('input[type=file]').files[0];
-        const reader = new FileReader();
-        reader.addEventListener("load", function () {
-            set_id("movie");
-            content.img = reader.result;
-            localStorage.setItem("movie"+localStorage.getItem("movie_id"), JSON.stringify(content));
-            //document.location.reload();
-        }, false);
-        if(imgPath) {
-            reader.readAsDataURL(imgPath);
-        }
-        else{
-            alert("Please upload a picture!");
+        if (confirm("Are you sure you want to add this movie?")) {
+            let content = {
+                title: document.getElementById("title-field").value,
+                producer: document.getElementById("producer-field").value,
+                year: document.getElementById("year").value,
+                genres: get_genres(),
+                plateform: document.getElementById("plateform").value,
+                synopsis: document.getElementById("synopsis-field").value,
+                rating: get_rating(),
+            }
+            const imgPath = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                set_id("movie");
+                content.img = reader.result;
+                localStorage.setItem("movie"+localStorage.getItem("movie_id"), JSON.stringify(content));
+                alert("Movie added successfully!");
+                //document.location.reload();
+            }, false);
+            if(imgPath) {
+                reader.readAsDataURL(imgPath);
+            }
+            else{
+                alert("Please upload a picture!");
+            }
         }
     }
 }

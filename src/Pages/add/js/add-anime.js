@@ -81,29 +81,33 @@ add_anime.onclick = () => {
     let valSyn = validateInput("synopsis");
     let valRat = validateInput("rating");
     if (valTitle && valProd && valEp && valSyn && valRat){
-        let content = {
-            title: document.getElementById("title-field").value,
-            producer: document.getElementById("producer-field").value,
-            year: document.getElementById("year").value,
-            episodes: document.getElementById("episodes-field").value,
-            genres: get_genres(),
-            plateform: document.getElementById("plateform").value,
-            synopsis: document.getElementById("synopsis-field").value,
-            rating: get_rating(),
-        }
-        const imgPath = document.querySelector('input[type=file]').files[0];
-        const reader = new FileReader();
-        reader.addEventListener("load", function () {
-            set_id("anime");
-            content.img = reader.result;
-            localStorage.setItem("anime"+localStorage.getItem("anime_id"), JSON.stringify(content));
-            //document.location.reload();
-        }, false);
-        if(imgPath !== undefined && imgPath !== null) {
-            reader.readAsDataURL(imgPath);
-        }
-        else{
-            alert("Please upload a picture!");
+        if (confirm("Are you sure you want to add this anime?")) {
+            let content = {
+                title: document.getElementById("title-field").value,
+                producer: document.getElementById("producer-field").value,
+                year: document.getElementById("year").value,
+                episodes: document.getElementById("episodes-field").value,
+                genres: get_genres(),
+                plateform: document.getElementById("plateform").value,
+                synopsis: document.getElementById("synopsis-field").value,
+                rating: get_rating(),
+            }
+            const imgPath = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                set_id("anime");
+                content.img = reader.result;
+                localStorage.setItem("anime"+localStorage.getItem("anime_id"), JSON.stringify(content));
+                // Afficher un message de confirmation
+                alert("Anime added successfully!");
+                //document.location.reload();
+            }, false);
+            if(imgPath !== undefined && imgPath !== null) {
+                reader.readAsDataURL(imgPath);
+            }
+            else{
+                alert("Please upload a picture!");
+            }
         }
     }
 }

@@ -81,29 +81,32 @@ add_book.onclick = () => {
     let valSyn = validateInput("synopsis");
     let valRat = validateInput("rating");
     if(valTitle && valAuthor && valPages && valChap && valSyn && valRat){
-        let content = {
-            title: document.getElementById("title-field").value,
-            author: document.getElementById("author-field").value,
-            year: document.getElementById("year").value,
-            pages: document.getElementById("pages-field").value,
-            chapters: document.getElementById("chapters-field").value,
-            genres: get_genres(),
-            synopsis: document.getElementById("synopsis-field").value,
-            rating: get_rating(),
-        }
-        const imgPath = document.querySelector('input[type=file]').files[0];
-        const reader = new FileReader();
-        reader.addEventListener("load", function () {
-            set_id("book");
-            content.img = reader.result;
-            localStorage.setItem("book"+localStorage.getItem("book_id"), JSON.stringify(content));
-            //document.location.reload();
-        }, false);
-        if(imgPath) {
-            reader.readAsDataURL(imgPath);
-        }
-        else{
-            alert("Please upload a picture!");
+        if (confirm("Are you sure you want to add this book?")) {
+            let content = {
+                title: document.getElementById("title-field").value,
+                author: document.getElementById("author-field").value,
+                year: document.getElementById("year").value,
+                pages: document.getElementById("pages-field").value,
+                chapters: document.getElementById("chapters-field").value,
+                genres: get_genres(),
+                synopsis: document.getElementById("synopsis-field").value,
+                rating: get_rating(),
+            }
+            const imgPath = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                set_id("book");
+                content.img = reader.result;
+                localStorage.setItem("book"+localStorage.getItem("book_id"), JSON.stringify(content));
+                alert("Book added successfully!");
+                //document.location.reload();
+            }, false);
+            if(imgPath) {
+                reader.readAsDataURL(imgPath);
+            }
+            else{
+                alert("Please upload a picture!");
+            }
         }
     }
 }

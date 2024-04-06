@@ -80,28 +80,31 @@ add_webtoon.onclick = () => {
     let valSyn = validateInput("synopsis");
     let valRat = validateInput("rating");
     if(valTitle && valAuthor && valChap && valSyn && valRat){
-        let content = {
-            title: document.getElementById("title-field").value,
-            author: document.getElementById("author-field").value,
-            year: document.getElementById("year").value,
-            chapters: document.getElementById("chapters-field").value,
-            genres: get_genres(),
-            synopsis: document.getElementById("synopsis-field").value,
-            rating: get_rating(),
-        }
-        const imgPath = document.querySelector('input[type=file]').files[0];
-        const reader = new FileReader();
-        reader.addEventListener("load", function () {
-            set_id("webtoon");
-            content.img = reader.result;
-            localStorage.setItem("webtoon"+localStorage.getItem("webtoon_id"), JSON.stringify(content));
-            //document.location.reload();
-        }, false);
-        if(imgPath) {
-            reader.readAsDataURL(imgPath);
-        }
-        else{
-            alert("Please upload a picture!");
+        if (confirm("Are you sure you want to add this webtoon?")) {
+            let content = {
+                title: document.getElementById("title-field").value,
+                author: document.getElementById("author-field").value,
+                year: document.getElementById("year").value,
+                chapters: document.getElementById("chapters-field").value,
+                genres: get_genres(),
+                synopsis: document.getElementById("synopsis-field").value,
+                rating: get_rating(),
+            }
+            const imgPath = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+            reader.addEventListener("load", function () {
+                set_id("webtoon");
+                content.img = reader.result;
+                localStorage.setItem("webtoon"+localStorage.getItem("webtoon_id"), JSON.stringify(content));
+                alert("Webtoon added successfully!");
+                //document.location.reload();
+            }, false);
+            if(imgPath) {
+                reader.readAsDataURL(imgPath);
+            }
+            else{
+                alert("Please upload a picture!");
+            }
         }
     }
 }
