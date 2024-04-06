@@ -113,9 +113,12 @@
     color: black;
     text-decoration: none;
 }
-.menu li a:hover{
+.menu li:hover {
+    border: 2px solid rgb(66, 66, 66); /* Grey border on hover */
+}
+
+.menu li a:hover {
     cursor: pointer;
-    border-bottom: solid #056cc7e1;
-    border:0;
-    color:white;
+    border: 0;
+    color: white;
 }
