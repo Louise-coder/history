@@ -50,38 +50,46 @@
                         </label>
                     </div>
                     <div class="rating">
-                        <input type="radio" name="star" id="star1">
-                        <label for="star1"></label>
-                        <input type="radio" name="star" id="star2">
-                        <label for="star2"></label>
-                        <input type="radio" name="star" id="star3">
-                        <label for="star3"></label>
-                        <input type="radio" name="star" id="star4">
-                        <label for="star4"></label>
-                        <input type="radio" name="star" id="star5">
-                        <label for="star5"></label>
+                        <div class="stars">
+                            <input type="radio" name="star" id="star5">
+                            <label for="star5"></label>
+                            <input type="radio" name="star" id="star4">
+                            <label for="star4"></label>
+                            <input type="radio" name="star" id="star3">
+                            <label for="star3"></label>
+                            <input type="radio" name="star" id="star2">
+                            <label for="star2"></label>
+                            <input type="radio" name="star" id="star1">
+                            <label for="star1"></label>
+                        </div>
+                        <span id="rating-error"></span>
                     </div>
                 </div>
                 <div class="myform">
                     <form>
                         <h1>Serie</h1>
-                        <span>
-                            <label for="title">Title*: </label>
-                            <input type="text" id="title" name="serie_title">
-                        </span>
-                        <span>
-                            <label for="producer">Producer: </label>
-                            <input type="text" id="producer" name="serie_producer">
-                        </span>
-                        <span>
-                            <label for="year">Year*:</label>
+                        <div class="input-group">
+                            <label id="title-label" class="input-label">TITLE</label>
+                            <input type="text" id="title-field" class="input-field" name="serie_title">
+                            <span id="title-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="producer-label" class="input-label">PRODUCER</label>
+                            <input type="text" id="producer-field" class="input-field" name="serie_producer">
+                            <span id="producer-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="year-label" class="input-label">YEAR</label>
                             <select name="year" id="year"></select>
-                        </span>
-                        <span>
-                            <label for="ep">Number of episodes*:</label>
-                            <input type="text" id="ep" name="serie_ep" size="3">
-                        </span>
-                        <span>
+                        </div>
+                        <div class="input-group">
+                            <label id="episodes-label" class="input-label">NB OF EPISODES</label>
+                            <input type="text" id="episodes-field" class="input-field" name="serie_ep">
+                            <span id="episodes-error" class="input-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label id="genres-label" class="input-label">GENRES</label>
+                            <br>
                             <input type="checkbox" id="action" name="genre" value="action">
                             <label for="action">Action</label>
                             <input type="checkbox" id="comedy" name="genre" value="comedy">
@@ -104,9 +112,9 @@
                             <label for="romance">Romance</label>
                             <input type="checkbox" id="scifi" name="genre" value="scifi">
                             <label for="scifi">Sci-fi</label>            
-                        </span>
-                        <span>
-                            <label for="plateform">Watch on:</label>
+                        </div>
+                        <div class="input-group">
+                            <label id="plateform-label" class="input-label">WATCH ON</label>
                             <select id="plateform" label="plateform">
                                 <option value=""></option>
                                 <option value="disney">Disney+</option>
@@ -114,15 +122,16 @@
                                 <option value="netflix">Netflix</option>
                                 <option value="primevideo">PrimeVideo</option>
                             </select>
-                        </span>
-                        <span>
-                            <label for="synopsis">Synopsis:</label><br>
-                            <textarea id="synopsis" name="serie_synopsis"></textarea>
-                        </span>
-                        <div class="addbutton">
-                            <button type="button" id="add_serie" value="submitted" onClick="">Add</button>
                         </div>
-                        <button type="button" id="clear">clear LS</button>
+                        <div class="input-group">
+                            <label id="synopsis-label" class="input-label">SYNOPSIS</label>
+                            <textarea id="synopsis-field" name="anime_synopsis"></textarea>
+                            <span id="synopsis-error" class="input-error"></span>
+                        </div>
+                        <div class="addbutton">
+                            <button id="clear_form" title="clear" class="clearbutton">Clear Form</button>
+                            <button id="add_anime" title="Add" class="cssbuttons-io-button">Add</button>
+                        </div>
                     </form>
                     <!-- SCRIPTS JS -->
                     <script src="js/add-content.js"></script>
