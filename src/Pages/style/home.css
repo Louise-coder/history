@@ -8,8 +8,6 @@
 /* typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* colors */
-
 /* Base */
 * {
     margin: 0;
@@ -204,7 +202,7 @@ header nav:hover > a:not(:hover) {
 .box {
     flex-grow: 0; /* Ne pas autoriser la boîte à grossir */
     flex-shrink: 0; /* Ne pas autoriser la boîte à rétrécir */
-    width: 300px; /* Définir une largeur fixe pour chaque boîte */    
+    width: 350px; /* Définir une largeur fixe pour chaque boîte */    
     margin: 10px; /* Espacement entre les boîtes */
     margin: 100px;
     justify-content: center;
@@ -217,6 +215,7 @@ header nav:hover > a:not(:hover) {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modification de la couleur de l'ombre */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .box:hover {
@@ -234,25 +233,33 @@ header nav:hover > a:not(:hover) {
   
 /* Styles for Essmay's image */
 .essmay-image {
-    width: 98%; 
+    width: 97%; 
 }
 
 .box p {
     color: white;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.essmay-title {
+    font-size: 25px;
+}
+.louise-title {
     font-size: 28px;
-    margin-bottom: 5%;
 }
 
 .box .title {
     color: white;
     background: #131624;
-    font-size: 15px;
+    padding: 8px 20px;
+    justify-content: center;
+    font-size: 18px; /* Taille de police différente */
     font-weight: 300;
     width: max-content;
-    padding: 3px 12px;
     border-radius: 8px;
-    margin-top: 5px;
-    text-align: center;
+    margin-top: 7px;
+    margin-left: 10%;
+    text-align: center; /* Centrer le texte */
 }
 
  
