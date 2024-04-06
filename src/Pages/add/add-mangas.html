@@ -85,11 +85,11 @@
                         <div class="input-group">
                             <label id="volume-label" class="input-label">NO VOLUME</label>
                             <input type="text" id="volume-field" class="input-field" name="manga_volume">
-                            <span id="pages-error" class="input-error"></span>
+                            <span id="volume-error" class="input-error"></span>
                         </div>
                         <div class="input-group">
-                            <label id="chapter-label" class="input-label">NB OF CHAPTERS</label>
-                            <input type="text" id="chapter-field" class="input-field" name="manga_chapters">
+                            <label id="chapters-label" class="input-label">NB OF CHAPTERS</label>
+                            <input type="text" id="chapters-field" class="input-field" name="manga_chapters">
                             <span id="chapters-error" class="input-error"></span>
                         </div>
                         <div class="input-group">
@@ -112,9 +112,9 @@
                             <span id="synopsis-error" class="input-error"></span>
                         </div>
                         <div class="addbutton">
-                            <button id="clear_form" title="clear" class="clearbutton">Clear Form</button>
-                            <button id="add_manga" title="Add" class="cssbuttons-io-button">Add</button>
+                            <button type="button" id="add_manga" title="Add" class="cssbuttons-io-button">Add</button>
                         </div>
+                        <button type="button" id="clear">clear LS</button>
                     </form>
                     <!-- SCRIPTS JS -->
                     <script src="js/add-content.js"></script>

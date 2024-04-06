@@ -21,12 +21,22 @@ function validateInput(field_name){
         else{
             if(!inputField.value.match(/^[A-Za-z0-9 -']+$/) || inputField.value === ""){
                 inputError.innerHTML = "Please enter a valid "+field_name+".";
-                inputField.style.borderBottomColor = "red";
+                if(field_name === "synopsis"){
+                    inputField.style.borderColor = "red";
+                }
+                else{
+                    inputField.style.borderBottomColor = "red";
+                } 
                 inputError.style.top = "105%";
                 return false;
             }
         }
-        inputField.style.borderBottomColor = "green";
+        if(field_name === "synopsis"){
+            inputField.style.borderColor = "green";
+        }
+        else{
+            inputField.style.borderBottomColor = "green";
+        } 
     }
     inputError.innerHTML = ""
     inputError.style.top = "100%";
