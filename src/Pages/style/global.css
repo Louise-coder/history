@@ -84,6 +84,7 @@ body {
     border-radius: 20em;
     cursor: pointer;
     transition: .5s;
+    margin-right: 20px;
 }
 
 .clearbutton:hover {
