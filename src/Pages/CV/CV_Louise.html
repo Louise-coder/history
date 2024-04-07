@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/vnd.icon" href="/src/Pages/img/favicon.ico">
+    <title>Louise - Personal Portfolio</title>
+    <style>
+      @import url("home.css");
+        @import url("style.css");
+    </style>
+</head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="img/memojis/Memoji_Louise.gif" alt="Louise Lam">
+          </figure>
+      
+          <div class="info-content">
+            <h1 class="name" title="Louise Lam">Louise Lam</h1>
+            <p class="title">Student in Bioinformatics</p>
+          </div>
+        </div>
+      
+        <div class="sidebar-details active">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:louise.lam@etu.u-paris.fr" class="contact-link">louise.lam@etu.u-paris.fr</a>
+              </div>
+            </li>
+      
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+33760034862" class="contact-link">+(33)6 61 43 32 48</a>
+              </div>
+            </li>
+      
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Paris, France</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+        </div>
+      </aside>
+      
+
+      <!-- Fenetre principale -->
+      <div class="main-content">
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- About Me -->
+        <article class="about  active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              🤷🏻‍♀️ I'm Louise LAM, a bioinformatics enthusiast currently in an apprenticeship at Sanofi, eagerly
+              delving into the endless possibilities of science.
+            </p>
+            <p>
+              🎓 With a dual degree in biology and computer science, and currently pursuing my Master's at the University
+              of Paris Cité, I thrive in the symbiosis of science and technology.
+            </p>
+            <p>
+              🗣️ Fluent in multiple languages including French, English, and Chinese, with a foundation in Spanish, I
+              effortlessly navigate between them.
+            </p>
+            <p>
+              🎹 Outside of my academic endeavors, I flourish in the realm of piano playing, where I find both solace and
+              inspiration, nurturing my passion for music alongside my studies.
+            </p>
+            <p>
+              🍽️ While my professional journey initially began in the bustling realms of sales and hospitality, where I
+              honed invaluable teamwork and customer service skills, my true calling lies within bioinformatics.
+            </p>
+            <p>
+              ❤️‍🔥 Overall, I am driven by a curiosity for knowledge and a desire to make meaningful contributions to the
+              field of bioinformatics while also embracing the beauty of art and culture in all its forms.
+            </p>
+          </section>
+          <section class="service">
+            <h3 class="h3 service-title">What I Do</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="img/icons/icon-dev.svg" alt="Bioinformatics icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Structural Bioinformatics</h4>
+                  <p class="service-item-text">
+                    Advanced analysis and modeling of biomolecular structures using computational methods.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="img/icons/icon-design.svg" alt="Machine Learning icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Machine Learning in Biology</h4>
+                  <p class="service-item-text">
+                    Applying machine learning techniques to analyze biological data and predict biological phenomena.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="img/icons/icon-design.svg" alt="Macromolecular Dynamics icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Macromolecular Dynamics</h4>
+                  <p class="service-item-text">
+                    Studying the dynamic behavior of biological macromolecules using computational simulations.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="img/icons/icon-dev.svg" alt="Drug Design icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Drug Design & Protein Docking</h4>
+                  <p class="service-item-text">
+                    Utilizing computational methods to design and optimize drug molecules for targeted interactions with
+                    proteins.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="/img/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                </figure>
+
+                <img src="/img/icons/icon-quote.svg" alt="quote icon">
+              </div>
+
+              <div class="modal-content">
+
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- Resume -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <!-- Education -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Paris-Cité University</h4>
+                <span>2023 — 2024</span>
+                <p class="timeline-text">
+                  Master's Degree in Computational Biology.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Paris-Cité University</h4>
+                <span>2020 — 2023</span>
+                <p class="timeline-text">
+                  Double degree in life sciences and computer science.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Saint-Louis High School</h4>
+                <span>2019 — 2020</span>
+                <p class="timeline-text">
+                  First year of preparatory class in BCPST.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Jean de la Fontaine High School</h4>
+                <span>2016 — 2019</span>
+                <p class="timeline-text">
+                  Scientific Baccalaureate with a specialization in Chinese.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- Experience -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Internship in a laboratory with Mr. Moroy</h4>
+                <span>june 2023</span>
+                <p class="timeline-text">
+                  Studying both the Prostate-associated microseminoprotein and the Beta-microseminoprotein.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Tutor in biology at Paris-Cité University</h4>
+                <span>2022 — 2023 </span>
+                <p class="timeline-text">
+                  Supporting undergraduate students facing difficulties in biology.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Employee at IT Trattoria</h4>
+                <span>Summer break 2022</span>
+                <p class="timeline-text">
+                  I've hab the opportunity to work in the kitchen, at the cash register, and even in the dining area.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Academic support</h4>
+                <span>Summer break 2022</span>
+                <p class="timeline-text">
+                  Weekly one-hour mentoring for a 1st-grade girl as part of a program supporting students facing
+                  socio-economic discrimination.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- Skills -->
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Object-oriented programming</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width:90%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web programming</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">System programming</h5>
+                  <data value="40">40%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Network programming</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Protein Docking</h5>
+                  <data value="20">20%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Molecular Dynamics</h5>
+                  <data value="30">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%;"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Protein Structure</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+
+        <!-- PORTFOLIO -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+          <h3 class="h3 service-title">In bioinformatics</h3>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/PR2.png" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Prediction of PR2 protein conformations against HIV</h3>
+                  <p class="project-category">Biostatistics analysis in R</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/internet.jpeg" alt="orizon" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Study on the relationship between the internet and depression</h3>
+                  <p class="project-category">Biostatistics analysis in R</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/aligner.png" alt="fundo" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Protein and genomic sequence aligner</h3>
+                  <p class="project-category">Object-oriented programming in Java</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <h3 class="h3 service-title">In data science</h3>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/client.png" alt="finance" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">A messaging platform called Megaphone</h3>
+                  <p class="project-category">Network programming in C</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/schema.png" alt="orizon" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">A social network called NoiseBook</h3>
+                  <p class="project-category">A database in SQL</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/xpat.png" alt="fundo" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Xpat Solver</h3>
+                  <p class="project-category">A card game solver in OCaml</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/slash.png" alt="fundo" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">An interactive shell called Slash</h3>
+                  <p class="project-category">System programming in C</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/calculator.png" alt="fundo" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Super calculator</h3>
+                  <p class="project-category">Algorithms in C</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/catan.png" alt="fundo" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Programming the board game named Catan</h3>
+                  <p class="project-category">Object-oriented programming in Java</p>
+                </a>
+              </li>
+
+              <li class="project-item  active">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="img/icons/supermain.png" alt="fundo" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">A social network called Supermain</h3>
+                  <p class="project-category">Web programming in HTML/CSS/PHP</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Contact -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <!-- map -->
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6747437.523643126!2d2.151086293645678!3d48.85661452643487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sfr!4v1646521744173!5m2!1sen!2sfr"
+                width="400" height="300" loading="lazy"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
