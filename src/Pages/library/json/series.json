@@ -32,5 +32,27 @@
         "synopsis": "This drama tells of the love story that develops between a surgeon and a special forces officer.",
         "rating": "star4",
         "img": "../img/descendantsofthesun.jpg"
+    },
+    {
+        "title":"The Walking Dead S1",
+        "producer": "Idiot Box Productions",
+        "year": 2010,
+        "episodes": 6,
+        "genres": ["drama", "horror"],
+        "plateform": "PrimeVideo",
+        "synopsis": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+        "rating": "star3",
+        "img": "../img/thewalkingdead.jpg"
+    },
+    {
+        "title":"La Casa De Papel S1",
+        "producer": "Atresmedia",
+        "year": 2017,
+        "episodes": 9,
+        "genres": ["action", "crime", "drama"],
+        "plateform": "Netflix",
+        "synopsis": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+        "rating": "star4",
+        "img": "../img/lacasadepapel.jpg"
     }
 ]

@@ -43,5 +43,16 @@
         "synopsis": "Animal Farm by George Orwell is a political allegory that depicts the rise and fall of a group of farm animals who overthrow their human owner to establish their own egalitarian society, only to see it corrupted into a dictatorship by the pigs who lead the rebellion.",
         "rating": "star2",
         "img":"../img/animalfarm.jpg"
+    },
+    {
+        "title": "The Giver",
+        "author": "Lois Lowry",
+        "year": 1993,
+        "pages": 220,
+        "chapters": 23,
+        "genres": ["novel"],
+        "synopsis": "In a seemingly perfect community without war, pain, suffering, differences or choices, a young boy is chosen to learn from an elderly man, the true pain and pleasure of the 'real' world.",
+        "rating": "star5",
+        "img":"../img/thegiver.jpg"
     }
 ]

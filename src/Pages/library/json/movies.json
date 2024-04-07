@@ -5,7 +5,7 @@
         "producer": "Legendary Pictures",
         "year": 2021,
         "genres": ["action","drama","romance"],
-        "plateform": "Prime Video",
+        "plateform": "PrimeVideo",
         "synopsis": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
         "rating": "star4",
         "img": "../img/dune.jpg"
@@ -15,7 +15,7 @@
         "producer": "Marvel Studios",
         "year": 2008,
         "genres": ["action","scifi"],
-        "plateform": "Prime Video",
+        "plateform": "PrimeVideo",
         "synopsis": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
         "rating": "star3",
         "img": "../img/ironman.jpg"
@@ -35,7 +35,7 @@
         "producer": "DreamWorks Animation",
         "year": 2010,
         "genres": ["action","fantasy","scifi"],
-        "plateform": "Prime Video",
+        "plateform": "PrimeVideo",
         "synopsis": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
         "rating": "star5",
         "img": "../img/dragon.jpg"
@@ -45,7 +45,7 @@
         "producer": "CoMix Wave Films",
         "year": 2019,
         "genres": ["action","fantasy","romance"],
-        "plateform": "Prime Video",
+        "plateform": "PrimeVideo",
         "synopsis": "Set during a period of exceptionally rainy weather, high-school boy Hodaka Morishima runs away from his troubled rural home to Tokyo and befriends an orphan girl who can manipulate the weather.",
         "rating": "star3",
         "img": "../img/weatheringwithyou.jpg"

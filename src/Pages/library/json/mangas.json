@@ -43,5 +43,16 @@
         "synopsis": "Hiyori, a small and timid girl, goes to school for the first time in a year since an accident left her hospitalized. Follow her as she struggles with her social skills, tries to make friends and maybe even a little bit more...?",
         "rating": "star3",
         "img": "../img/hiyokoi.jpg"
+    },
+    {
+        "title": "Death Note",
+        "author": "Tsugumi Ohba",
+        "year": 2003,
+        "volume": 1,
+        "chapters": 9,
+        "genres": ["shonen"],
+        "synopsis": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+        "rating": "star3",
+        "img": "../img/deathnote.jpg"
     }
 ]
