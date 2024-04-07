@@ -31,7 +31,7 @@
 .navigation1 .non-active {
     background-color: #161d38;
     transition: background-color 0.3s ease; 
-    overflow: hidden; /* Assurer que les pseudo-éléments ne dépassent pas les limites de l'élément parent */
+    overflow: hidden;
 }
 .navigation1 li::before,
 .navigation1 li::after {
@@ -206,7 +206,7 @@
     position: relative;
     display:block;
     font-size: 40px;
-    color: yellow;
+    color: gold;
     top: -40px;
     opacity: 0;
     transition: .5s;
@@ -230,7 +230,7 @@
     background-image: url('../../img/bg_form.jpeg');
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 16px;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(50px);
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
 }
 form h1{
