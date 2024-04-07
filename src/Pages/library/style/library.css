@@ -37,13 +37,15 @@
     margin-bottom: 0px;
 }
 .navigation1 li {
+    font-size: 20px;
     position: relative; 
     height: 30px;
     width: 200px;
     font-weight: bold;
     text-align: center;
     padding-top: 15px;
-    border: none; 
+    padding-bottom: 15px;
+    border: none;
 }
 .navigation1 .active {
     background-color: #11162b;
@@ -80,7 +82,8 @@
 }
 .navigation1 .non-active a:hover {
     cursor: pointer;
-    color: black;
+    color: white;
+    text-shadow: 0 0 1px #ffffff, 0 0 0px #ffffff, 0 0 10px #ffffff;
 }
 .navigation1 .non-active:hover::before,
 .navigation1 .non-active:hover::after {
@@ -110,24 +113,27 @@
     justify-content:space-evenly;
 }
 .navigation2 li{
+    font-size: 20px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border: 0;
+    text-shadow: 0 0 2px #008cff, 0 0 0px #008cff, 0 0 10px #008cff;
 }
 .navigation2 .active{
     font-weight: bold;
-    color: #056cc7e1;
-    border-bottom: 2px solid #056cc7e1;
+    color: #008cff;
+    border-bottom: 2px solid #008cff;
 }
 .navigation2 .non-active a{
     text-decoration: none;
-    color: #056cc7e1;
+    color: #008cff;
 }
 .navigation2 .non-active a:hover{
     cursor: pointer;
     color: white;
+    text-shadow: 0 0 3px #ffffff, 0 0 0px #ffffff, 0 0 10px #ffffff;
 }
 
 /* CARD */
@@ -140,7 +146,6 @@
     height: 100%;
     width: 95%;
     margin: 2%;
-    margin-top: 0;
     background-color:  #111422b1;
 }
 .card{
@@ -217,7 +222,7 @@
     font-family: FontAwesome;
     display:block;
     font-size: 20px;
-    color: gold;
+    color: goldenrod;
     top: -20px;
 }
 

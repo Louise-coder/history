@@ -164,14 +164,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
-    padding-top: 20px;
 }
 
 .logo {
-    width: 150px; 
-    margin-top: 10%;
-    padding: 5px;
+    margin-top: 50px;
+    width: 230px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     height: auto; 
     transition: transform 0.3s ease;
 }
@@ -180,10 +180,9 @@ body {
     transform: scale(1.1); 
     cursor: pointer;
     background: #008cff33;
-    border-radius: 100%;
+    border-radius: 8%;
     border: 1px solid #008cff;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+    box-shadow: 0 0 5px #008cff, 0 0 10px #008cff, 0 0 10px #008cff, 0 0 10px #008cff;
 }
 
 

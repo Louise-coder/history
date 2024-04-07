@@ -5,13 +5,14 @@
     background-image: url('../../img/parallax_effect/bg_expended.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
+
 /* NAVBAR 1 */
 .buttons{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: 0;
     justify-content: right;
 }
@@ -25,19 +26,24 @@
     margin-bottom: 0px;
 }
 .navigation1 li {
+    font-size: 20px;
     position: relative; 
     height: 30px;
     width: 200px;
     font-weight: bold;
     text-align: center;
     padding-top: 15px;
-    z-index: 1;
+    padding-bottom: 15px;
     background: inherit;
-    backdrop-filter: blur(10px);
+    background-color: #0f152d;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    box-shadow: 3px -3px 3px rgba(86, 86, 86, 0.8), 
-              -3px -3px 3px rgba(86, 86, 86, 0.8);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 10px lightslategray, 
+    -1px 1px 10px lightslategray,
+    -1px -1px 10px lightslategray,
+    1px -1px 10px lightslategray;
 }
 /* MAIN */
 .main{
@@ -54,16 +60,17 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    width: 90%;
+    width: 80%;
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     backdrop-filter: blur(35px);
-    box-shadow: 3px 3px 3px rgba(86, 86, 86, 0.8), 
-    -3px 3px 3px rgba(86, 86, 86, 0.8),
-    -3px -3px 3px rgba(86, 86, 86, 0.8),
-    3px -3px 3px rgba(86, 86, 86, 0.8);
+    box-shadow: 1px 1px 10px lightslategray, 
+    -1px 1px 10px lightslategray,
+    -1px -1px 10px lightslategray,
+    1px -1px 10px lightslategray;
 }
 
 /* LEFT PANEL */
@@ -71,7 +78,7 @@
     display: flex;
     flex-direction: column;
     height: 90%;
-    width: 40%;
+    width: 30%;
     align-items: center;
     justify-content:center;
 }
@@ -85,6 +92,8 @@
     background-position: center;
     background-size: cover;
     border-radius: 10px;
+    box-shadow: 0 0 3px #ffffff, 0 0 2px #ffffff, 0 0 5px #ffffff,
+    0 0 20px #ffffff;
 }
 
 /* star rating */
@@ -116,8 +125,9 @@
     font-family: FontAwesome;
     display:block;
     font-size: 40px;
-    color: gold;
+    color: goldenrod;
     top: -40px;
+    text-shadow: 2px 2px 4px white;
 }
 
 /* RIGHT PANEL */
@@ -128,7 +138,6 @@
     justify-content: center;
     height: 100%;
     width: 40%;
-    padding: 10px;
     padding-left: 5%;
     padding-right: 5%;
     background: linear-gradient(#0c0f1c,  #171e3bd5);
@@ -146,17 +155,16 @@
     margin: 3px;
 }
 .data h1 {
+    padding-top: 50px;
     margin: 0;
-    color: rgb(211, 209, 209);
+    color: white;
     font-size: 50px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.5);
+    text-shadow: 5px 5px 5px #008cff;
 }
 .data h1:hover {
-    color: #056cc7e1; 
-}
-.data h1:hover {
-    color: #056cc7e1; 
+    color: #008cff;
+    text-shadow: 0 0 1px #008cff, 0 0 0px #008cff, 0 0 10px #008cff;
 }
 .data ul{
     display: flex;
@@ -177,12 +185,14 @@
 .panel{
     display:flex;
     flex-direction: column;
+    padding-right: 25px;
 }
 .both{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 .section{
     display: flex;
