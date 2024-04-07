@@ -89,7 +89,7 @@ function display_content(myContent, params){
     let synopsis = document.createElement("div");
     synopsis.classList.add("synopsis");
     let synopsisTitle = document.createElement("h2");
-    synopsisTitle.textContent = "Synopsis";
+    synopsisTitle.textContent = "📜 Synopsis";
     let synopsisContent = document.createElement("p");
     synopsisContent.textContent = myContent.synopsis;
     synopsis.appendChild(synopsisTitle);
@@ -104,7 +104,7 @@ function display_content(myContent, params){
     let year = document.createElement("div");
     year.classList.add("section");
     let yearTitle = document.createElement("h4");
-    yearTitle.textContent = "Year";
+    yearTitle.textContent = "📅 Year";
     let yearContent = document.createElement("p");
     yearContent.textContent = myContent.year;
     year.appendChild(yearTitle);
@@ -114,7 +114,7 @@ function display_content(myContent, params){
         let producer = document.createElement("div");
         producer.classList.add("section");
         let producerTitle = document.createElement("h4");
-        producerTitle.textContent = "Producer";
+        producerTitle.textContent = "🎥 Producer";
         let producerContent = document.createElement("p");
         producerContent.textContent = myContent.producer;
         producer.appendChild(producerTitle);
@@ -124,7 +124,7 @@ function display_content(myContent, params){
             let episodes = document.createElement("div");
             episodes.classList.add("section");
             let epTitle = document.createElement("h4");
-            epTitle.textContent = "Episodes";
+            epTitle.textContent = "🎞️ Episodes";
             let epContent = document.createElement("p");
             epContent.textContent = myContent.episodes;
             episodes.appendChild(epTitle);
@@ -134,7 +134,7 @@ function display_content(myContent, params){
         let plateform = document.createElement("div");
         plateform.classList.add("section");
         let plTitle = document.createElement("h4");
-        plTitle.textContent = "Plateform";
+        plTitle.textContent = "🌐 Plateform";
         let plContent = document.createElement("p");
         plContent.textContent = myContent.plateform;
         plateform.appendChild(plTitle);
@@ -145,7 +145,7 @@ function display_content(myContent, params){
         let author = document.createElement("div");
         author.classList.add("section");
         let authorTitle = document.createElement("h4");
-        authorTitle.textContent = "Author";
+        authorTitle.textContent = "🖋️ Author";
         let authorContent = document.createElement("p");
         authorContent.textContent = myContent.author;
         author.appendChild(authorTitle);
@@ -155,7 +155,7 @@ function display_content(myContent, params){
             let pages = document.createElement("div");
             pages.classList.add("section");
             let epTitle = document.createElement("h4");
-            epTitle.textContent = "Nb of pages";
+            epTitle.textContent = "🗒️ Nb of pages";
             let epContent = document.createElement("p");
             epContent.textContent = myContent.pages;
             pages.appendChild(epTitle);
@@ -166,7 +166,7 @@ function display_content(myContent, params){
             let volume = document.createElement("div");
             volume.classList.add("section");
             let epTitle = document.createElement("h4");
-            epTitle.textContent = "Volume";
+            epTitle.textContent = "📚 Volume";
             let epContent = document.createElement("p");
             epContent.textContent = myContent.volume;
             volume.appendChild(epTitle);
@@ -176,7 +176,7 @@ function display_content(myContent, params){
         let chapters = document.createElement("div");
         chapters.classList.add("section");
         let plTitle = document.createElement("h4");
-        plTitle.textContent = "Nb of chapters";
+        plTitle.textContent = "🗂️ Nb of chapters";
         let plContent = document.createElement("p");
         plContent.textContent = myContent.chapters;
         chapters.appendChild(plTitle);
