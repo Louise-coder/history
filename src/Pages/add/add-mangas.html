@@ -11,123 +11,125 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!-- BANNER -->
-        <div class="banner">
-            <a href="../home.html">
-                <img src="../img/history_logo.webp" class="logo" alt="History Logo">
-            </a>
-        </div>
-        <div class="buttons">
-            <ul class="navigation1">
-                <li class="non-active"><a href="add-streaming.html">STREAMING</a></li>
-                <li class="active">READING</li>
-            </ul>
-            <div class="backbutton">
-                <a href="../library/library-mangas.html" class="Btn"> <!-- Déplacez le lien autour du bouton -->
-                    <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
-                    <p class="text">Back</p>
+        <div class="bgimg">
+            <!-- BANNER -->
+            <div class="banner">
+                <a href="../home.html">
+                    <img src="../img/history_logo.webp" class="logo" alt="History Logo">
                 </a>
             </div>
-        </div>
-        <div class="main">
-            <div class="buttons2">
-                <ul class="navigation2">
-                    <li class="non-active"><a href="add-books.html">Books</a></li>
-                    <li class="active">Mangas</li>
-                    <li class="non-active"><a href="add-webtoons.html">Webtoons</a></li>
+            <div class="buttons">
+                <ul class="navigation1">
+                    <li class="non-active"><a href="add-streaming.html">STREAMING</a></li>
+                    <li class="active">READING</li>
                 </ul>
+                <div class="backbutton">
+                    <a href="../library/library-mangas.html" class="Btn"> <!-- Déplacez le lien autour du bouton -->
+                        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+                        <p class="text">Back</p>
+                    </a>
+                </div>
             </div>
-            <div class="mycontent">
-                <div class="pic">
-                    <div class="img">
-                        <label for="input-file" id="drop-area">
-                            <input type="file" accept="image/*" id="input-file" hidden>
-                            <div id="img-view">
-                                <img src="../img/upload-img.jpg">
-                                <p>Drag and drop or click here to upload image.</p>
-                                <span>Upload any images from desktop</span>
+            <div class="main">
+                <div class="buttons2">
+                    <ul class="navigation2">
+                        <li class="non-active"><a href="add-books.html">Books</a></li>
+                        <li class="active">Mangas</li>
+                        <li class="non-active"><a href="add-webtoons.html">Webtoons</a></li>
+                    </ul>
+                </div>
+                <div class="mycontent">
+                    <div class="pic">
+                        <div class="img">
+                            <label for="input-file" id="drop-area">
+                                <input type="file" accept="image/*" id="input-file" hidden>
+                                <div id="img-view">
+                                    <img src="../img/upload-img.jpg">
+                                    <p>Drag and drop or click here to upload image.</p>
+                                    <span>Upload any images from desktop</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <input type="radio" name="star" id="star5">
+                                <label for="star5"></label>
+                                <input type="radio" name="star" id="star4">
+                                <label for="star4"></label>
+                                <input type="radio" name="star" id="star3">
+                                <label for="star3"></label>
+                                <input type="radio" name="star" id="star2">
+                                <label for="star2"></label>
+                                <input type="radio" name="star" id="star1">
+                                <label for="star1"></label>
                             </div>
-                        </label>
+                            <span id="rating-error"></span>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <div class="stars">
-                            <input type="radio" name="star" id="star5">
-                            <label for="star5"></label>
-                            <input type="radio" name="star" id="star4">
-                            <label for="star4"></label>
-                            <input type="radio" name="star" id="star3">
-                            <label for="star3"></label>
-                            <input type="radio" name="star" id="star2">
-                            <label for="star2"></label>
-                            <input type="radio" name="star" id="star1">
-                            <label for="star1"></label>
-                        </div>
-                        <span id="rating-error"></span>
+                    <div class="myform">
+                        <form>
+                            <h1>Manga</h1>
+                            <div class="input-group">
+                                <label id="title-label" class="input-label">TITLE</label>
+                                <input type="text" id="title-field" class="input-field" name="manga_title">
+                                <span id="title-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="author-label" class="input-label">AUTHOR</label>
+                                <input type="text" id="author-field" class="input-field" name="manga_author">
+                                <span id="author-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="year-label" class="input-label">YEAR</label>
+                                <select name="year" id="year" class="custom-select"></select>
+                            </div>
+                            <div class="input-group">
+                                <label id="volume-label" class="input-label">NO VOLUME</label>
+                                <input type="text" id="volume-field" class="input-field" name="manga_volume">
+                                <span id="volume-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="chapters-label" class="input-label">NB OF CHAPTERS</label>
+                                <input type="text" id="chapters-field" class="input-field" name="manga_chapters">
+                                <span id="chapters-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="genres-label" class="input-label">GENRES</label>
+                                <br>
+                                <input type="checkbox" id="josei" name="genre" value="josei">
+                                <label for="josei">Josei</label>
+                                <input type="checkbox" id="kodomo" name="genre" value="kodomo">
+                                <label for="kodomo">Kodomo</label>
+                                <input type="checkbox" id="shojo" name="genre" value="shojo">
+                                <label for="shojo">Shojo</label>
+                                <input type="checkbox" id="shonen" name="genre" value="shonen">
+                                <label for="shonen">Shônen</label>
+                                <input type="checkbox" id="seinen" name="genre" value="seinen">
+                                <label for="seinen">Seinen</label>    
+                            </div>
+                            <div class="input-group">
+                                <label id="synopsis-label" class="input-label">SYNOPSIS</label>
+                                <textarea id="synopsis-field" name="manga_synopsis"></textarea>
+                                <span id="synopsis-error" class="input-error"></span>
+                            </div>
+                            <div class="addbutton">
+                                <button type="button" id="add_manga" title="Add" class="cssbuttons-io-button">Add</button>
+                            </div>
+                        </form>
+                        <!-- SCRIPTS JS -->
+                        <script src="js/add-content.js"></script>
+                        <script src="js/add-manga.js"></script>
                     </div>
-                </div>
-                <div class="myform">
-                    <form>
-                        <h1>Manga</h1>
-                        <div class="input-group">
-                            <label id="title-label" class="input-label">TITLE</label>
-                            <input type="text" id="title-field" class="input-field" name="manga_title">
-                            <span id="title-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="author-label" class="input-label">AUTHOR</label>
-                            <input type="text" id="author-field" class="input-field" name="manga_author">
-                            <span id="author-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="year-label" class="input-label">YEAR</label>
-                            <select name="year" id="year" class="custom-select"></select>
-                        </div>
-                        <div class="input-group">
-                            <label id="volume-label" class="input-label">NO VOLUME</label>
-                            <input type="text" id="volume-field" class="input-field" name="manga_volume">
-                            <span id="volume-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="chapters-label" class="input-label">NB OF CHAPTERS</label>
-                            <input type="text" id="chapters-field" class="input-field" name="manga_chapters">
-                            <span id="chapters-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="genres-label" class="input-label">GENRES</label>
-                            <br>
-                            <input type="checkbox" id="josei" name="genre" value="josei">
-                            <label for="josei">Josei</label>
-                            <input type="checkbox" id="kodomo" name="genre" value="kodomo">
-                            <label for="kodomo">Kodomo</label>
-                            <input type="checkbox" id="shojo" name="genre" value="shojo">
-                            <label for="shojo">Shojo</label>
-                            <input type="checkbox" id="shonen" name="genre" value="shonen">
-                            <label for="shonen">Shônen</label>
-                            <input type="checkbox" id="seinen" name="genre" value="seinen">
-                            <label for="seinen">Seinen</label>    
-                        </div>
-                        <div class="input-group">
-                            <label id="synopsis-label" class="input-label">SYNOPSIS</label>
-                            <textarea id="synopsis-field" name="manga_synopsis"></textarea>
-                            <span id="synopsis-error" class="input-error"></span>
-                        </div>
-                        <div class="addbutton">
-                            <button type="button" id="add_manga" title="Add" class="cssbuttons-io-button">Add</button>
-                        </div>
-                    </form>
-                    <!-- SCRIPTS JS -->
-                    <script src="js/add-content.js"></script>
-                    <script src="js/add-manga.js"></script>
                 </div>
             </div>
+            <!-- FOOTER -->
+            <footer class="text-center" id="footer">
+                <hr>
+                <br>
+                Copyright &copy; Université Paris-Cité - All rights reserved
+                <br>
+                Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
+            </footer>
         </div>
-        <!-- FOOTER -->
-        <footer class="text-center" id="footer">
-            <hr>
-            <br>
-            Copyright &copy; Université Paris-Cité - All rights reserved
-            <br>
-            Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
-        </footer>
     </body>
 </html>

@@ -11,127 +11,129 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!-- BANNER -->
-        <div class="banner">
-            <a href="../home.html">
-                <img src="../img/history_logo.webp" class="logo" alt="History Logo">
-            </a>
-        </div>
-        <div class="buttons">
-            <ul class="navigation1">
-                <li class="active">STREAMING</li>
-                <li class="non-active"><a href="add-reading.html">READING</a></li>
-            </ul>
-            <div class="backbutton">
-                <a href="../library/library-animes.html" class="Btn"> <!-- Déplacez le lien autour du bouton -->
-                    <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
-                    <p class="text">Back</p>
+        <div class="bgimg">
+            <!-- BANNER -->
+            <div class="banner">
+                <a href="../home.html">
+                    <img src="../img/history_logo.webp" class="logo" alt="History Logo">
                 </a>
             </div>
-        </div>
-        <div class="main">
-            <div class="buttons2">
-                <ul class="navigation2">
-                    <li class="active">Animes</li>
-                    <li class="non-active"><a href="add-movies.html">Movies</a></li>
-                    <li class="non-active"><a href="add-series.html">Series</a></li>
+            <div class="buttons">
+                <ul class="navigation1">
+                    <li class="active">STREAMING</li>
+                    <li class="non-active"><a href="add-reading.html">READING</a></li>
                 </ul>
+                <div class="backbutton">
+                    <a href="../library/library-animes.html" class="Btn"> <!-- Déplacez le lien autour du bouton -->
+                        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+                        <p class="text">Back</p>
+                    </a>
+                </div>
             </div>
-            <div class="mycontent">
-                <div class="pic">
-                    <div class="img">
-                        <label for="input-file" id="drop-area">
-                            <input type="file" accept="image/*" id="input-file" hidden>
-                            <div id="img-view">
-                                <img src="../img/upload-img.jpg">
-                                <p>Drag and drop or click here to upload image.</p>
-                                <span>Upload any images from desktop</span>
+            <div class="main">
+                <div class="buttons2">
+                    <ul class="navigation2">
+                        <li class="active">Animes</li>
+                        <li class="non-active"><a href="add-movies.html">Movies</a></li>
+                        <li class="non-active"><a href="add-series.html">Series</a></li>
+                    </ul>
+                </div>
+                <div class="mycontent">
+                    <div class="pic">
+                        <div class="img">
+                            <label for="input-file" id="drop-area">
+                                <input type="file" accept="image/*" id="input-file" hidden>
+                                <div id="img-view">
+                                    <img src="../img/upload-img.jpg">
+                                    <p>Drag and drop or click here to upload image.</p>
+                                    <span>Upload any images from desktop</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <input type="radio" name="star" id="star5">
+                                <label for="star5"></label>
+                                <input type="radio" name="star" id="star4">
+                                <label for="star4"></label>
+                                <input type="radio" name="star" id="star3">
+                                <label for="star3"></label>
+                                <input type="radio" name="star" id="star2">
+                                <label for="star2"></label>
+                                <input type="radio" name="star" id="star1">
+                                <label for="star1"></label>
                             </div>
-                        </label>
+                            <span id="rating-error"></span>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <div class="stars">
-                            <input type="radio" name="star" id="star5">
-                            <label for="star5"></label>
-                            <input type="radio" name="star" id="star4">
-                            <label for="star4"></label>
-                            <input type="radio" name="star" id="star3">
-                            <label for="star3"></label>
-                            <input type="radio" name="star" id="star2">
-                            <label for="star2"></label>
-                            <input type="radio" name="star" id="star1">
-                            <label for="star1"></label>
-                        </div>
-                        <span id="rating-error"></span>
+                    <div class="myform">
+                        <form>
+                            <h1>Anime</h1>
+                            <div class="input-group">
+                                <label id="title-label" class="input-label">TITLE</label>
+                                <input type="text" id="title-field" class="input-field" name="anime_title">
+                                <span id="title-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="producer-label" class="input-label">PRODUCER</label>
+                                <input type="text" id="producer-field" class="input-field" name="anime_producer">
+                                <span id="producer-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="year-label" class="input-label">YEAR</label>
+                                <select name="year" id="year" class="custom-select"></select>
+                            </div>
+                            <div class="input-group">
+                                <label id="episodes-label" class="input-label">NB OF EPISODES</label>
+                                <input type="text" id="episodes-field" class="input-field" name="anime_ep">
+                                <span id="episodes-error" class="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label id="genres-label" class="input-label">GENRES</label>
+                                <br>
+                                <input type="checkbox" id="josei" name="genre" value="josei">
+                                <label for="josei">Josei</label>
+                                <input type="checkbox" id="kodomo" name="genre" value="kodomo">
+                                <label for="kodomo">Kodomo</label>
+                                <input type="checkbox" id="shojo" name="genre" value="shojo">
+                                <label for="shojo">Shojo</label>
+                                <input type="checkbox" id="shonen" name="genre" value="shonen">
+                                <label for="shonen">Shônen</label>
+                                <input type="checkbox" id="seinen" name="genre" value="seinen">
+                                <label for="seinen">Seinen</label>
+                            </div>
+                            <div class="input-group">
+                                <label id="plateform-label" class="input-label">WATCH ON</label>
+                                <select id="plateform" label="plateform" class="custom-select">
+                                    <option value="Adn">ADN</option>
+                                    <option value="Crunchyroll">Crunchyroll</option>
+                                    <option value="Netflix">Netflix</option>
+                                    <option value="PrimeVideo">PrimeVideo</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label id="synopsis-label" class="input-label">SYNOPSIS</label>
+                                <textarea id="synopsis-field" name="anime_synopsis"></textarea>
+                                <span id="synopsis-error" class="input-error"></span>
+                            </div>
+                            <div class="addbutton">
+                                <button type="button" id="add_anime" title="Add" class="cssbuttons-io-button">Add</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="myform">
-                    <form>
-                        <h1>Anime</h1>
-                        <div class="input-group">
-                            <label id="title-label" class="input-label">TITLE</label>
-                            <input type="text" id="title-field" class="input-field" name="anime_title">
-                            <span id="title-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="producer-label" class="input-label">PRODUCER</label>
-                            <input type="text" id="producer-field" class="input-field" name="anime_producer">
-                            <span id="producer-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="year-label" class="input-label">YEAR</label>
-                            <select name="year" id="year" class="custom-select"></select>
-                        </div>
-                        <div class="input-group">
-                            <label id="episodes-label" class="input-label">NB OF EPISODES</label>
-                            <input type="text" id="episodes-field" class="input-field" name="anime_ep">
-                            <span id="episodes-error" class="input-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label id="genres-label" class="input-label">GENRES</label>
-                            <br>
-                            <input type="checkbox" id="josei" name="genre" value="josei">
-                            <label for="josei">Josei</label>
-                            <input type="checkbox" id="kodomo" name="genre" value="kodomo">
-                            <label for="kodomo">Kodomo</label>
-                            <input type="checkbox" id="shojo" name="genre" value="shojo">
-                            <label for="shojo">Shojo</label>
-                            <input type="checkbox" id="shonen" name="genre" value="shonen">
-                            <label for="shonen">Shônen</label>
-                            <input type="checkbox" id="seinen" name="genre" value="seinen">
-                            <label for="seinen">Seinen</label>
-                        </div>
-                        <div class="input-group">
-                            <label id="plateform-label" class="input-label">WATCH ON</label>
-                            <select id="plateform" label="plateform" class="custom-select">
-                                <option value="adn">ADN</option>
-                                <option value="crunchyroll">Crunchyroll</option>
-                                <option value="netflix">Netflix</option>
-                                <option value="primevideo">PrimeVideo</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label id="synopsis-label" class="input-label">SYNOPSIS</label>
-                            <textarea id="synopsis-field" name="anime_synopsis"></textarea>
-                            <span id="synopsis-error" class="input-error"></span>
-                        </div>
-                        <div class="addbutton">
-                            <button type="button" id="add_anime" title="Add" class="cssbuttons-io-button">Add</button>
-                        </div>
-                    </form>
                 </div>
             </div>
+            <!-- SCRIPTS JS -->
+            <script src="js/add-content.js"></script>
+            <script src="js/add-anime.js"></script>
+            <!-- FOOTER -->
+            <footer class="text-center" id="footer">
+                <hr>
+                <br>
+                Copyright &copy; Université Paris-Cité - All rights reserved
+                <br>
+                Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
+            </footer>
         </div>
-        <!-- SCRIPTS JS -->
-        <script src="js/add-content.js"></script>
-        <script src="js/add-anime.js"></script>
-        <!-- FOOTER -->
-        <footer class="text-center" id="footer">
-            <hr>
-            <br>
-            Copyright &copy; Université Paris-Cité - All rights reserved
-            <br>
-            Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
-        </footer>
     </body>
 </html>
