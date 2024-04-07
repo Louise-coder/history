@@ -13,7 +13,7 @@ Ce projet a été testé avec `HTML5`, `CSS3` et `JavaScript` sur `Google Chrome
 ```
 tar -xvf webProject-M1BI-LamTouami.tar
 ```
-2. Ouvrir le fichier `history/src/Pages/home.html` sur votre navigateur préféré.
+2. Ouvrir le fichier `history/src/home.html` sur votre navigateur préféré.
 
 ## Remarques
 - Pour prévisualiser et pré-remplir les bibliothèques, des fichiers JSON ont été utilisés.
