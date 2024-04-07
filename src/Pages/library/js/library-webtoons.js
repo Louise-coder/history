@@ -68,5 +68,6 @@ clear.onclick = () =>{
         return;
     }
     localStorage.clear();
+    alert("All content in the Local Storage has been successfully cleared!");
     document.location.reload();
 }

@@ -62,11 +62,12 @@ if(LSanimeID !== null){
 }
 // CLEAR LS
 clear.onclick = () =>{
-    var result = confirm("Are you sure?");
+    var result = confirm("Are you sure you want to delete everything in the Local Storage?");
     if(result == false){
         event.preventDefault();
         return;
     }
     localStorage.clear();
+    alert("All content in the Local Storage has been successfully cleared!");
     document.location.reload();
 }
