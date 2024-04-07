@@ -66,9 +66,9 @@ function display_content(myContent, params){
         let del = document.createElement("div");
         del.classList.add("del");
         let button = document.createElement("a");
-        button.classList.add("delbutton");
+        button.classList.add("clearbutton");
         button.id = "del";
-        button.textContent = "X";
+        button.textContent = "delete";
         del.appendChild(button);
         data.appendChild(del);
     }
@@ -193,7 +193,7 @@ console.log(paramsObject.type+paramsObject.id);
 // DELETE BUTTON
 const deleteButton = document.getElementById("del")
 deleteButton.addEventListener('click', function() {
-    var result = confirm("Are you sure?");
+    var result = confirm("Are you sure you want to delete this content?");
     if(result == false){
         event.preventDefault();
         return;
