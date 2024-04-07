@@ -97,7 +97,7 @@ add_webtoon.onclick = () => {
                 content.img = reader.result;
                 localStorage.setItem("webtoon"+localStorage.getItem("webtoon_id"), JSON.stringify(content));
                 alert("Webtoon added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath) {
                 reader.readAsDataURL(imgPath);

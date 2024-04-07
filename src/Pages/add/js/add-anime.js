@@ -100,7 +100,7 @@ add_anime.onclick = () => {
                 localStorage.setItem("anime"+localStorage.getItem("anime_id"), JSON.stringify(content));
                 // Afficher un message de confirmation
                 alert("Anime added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath !== undefined && imgPath !== null) {
                 reader.readAsDataURL(imgPath);

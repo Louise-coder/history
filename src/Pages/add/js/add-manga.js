@@ -99,7 +99,7 @@ add_manga.onclick = () => {
                 content.img = reader.result;
                 localStorage.setItem("manga"+localStorage.getItem("manga_id"), JSON.stringify(content));
                 alert("Manga added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath) {
                 reader.readAsDataURL(imgPath);

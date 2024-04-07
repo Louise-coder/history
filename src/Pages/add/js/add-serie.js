@@ -98,7 +98,7 @@ add_serie.onclick = () => {
                 content.img = reader.result;
                 localStorage.setItem("serie"+localStorage.getItem("serie_id"), JSON.stringify(content));
                 alert("Serie added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath) {
                 reader.readAsDataURL(imgPath);

@@ -86,7 +86,7 @@ add_movie.onclick = () => {
                 content.img = reader.result;
                 localStorage.setItem("movie"+localStorage.getItem("movie_id"), JSON.stringify(content));
                 alert("Movie added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath) {
                 reader.readAsDataURL(imgPath);

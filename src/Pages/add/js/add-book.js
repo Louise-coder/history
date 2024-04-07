@@ -99,7 +99,7 @@ add_book.onclick = () => {
                 content.img = reader.result;
                 localStorage.setItem("book"+localStorage.getItem("book_id"), JSON.stringify(content));
                 alert("Book added successfully!");
-                //document.location.reload();
+                location.reload()
             }, false);
             if(imgPath) {
                 reader.readAsDataURL(imgPath);
