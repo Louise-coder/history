@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Louise - Personal Portfolio</title>
+        <!-- STYLE -->
+        <style>
+          @import url("../style/global.css");
+          @import url("../style/home.css");
+          @import url("cv.css");
+        </style>
+        <!-- ICON-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!-- LINKS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+        <link rel="shortcut icon" href="/img/icons/logo.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+      <div class="bgimg">
+        <!-- BANNER -->
+        <div class="banner">
+          <a href="../home.html">
+              <img src="../img/history_logo.webp" class="logo" alt="History Logo">
+          </a>
+        </div>
+        <!-- SIDEBAR-->
+        <div class="container">
+          <div class="sidebar">
+            <figure class="avatar-box">
+              <img src="img/memojis/Memoji_Louise.gif" alt="Louise LAM">
+            </figure>
+    
+            <div class="info-content">
+              <h1 class="name" title="Louise LAM">Louise Lam</h1>
+              <p class="title">Student in Bioinformatics</p>
+            </div>
+            <div class="separator"></div>
+            <ul class="contacts-list">
+              <li class="contact-item" id="mail">
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+                  <a href="mailto:louiselam@etu.u-paris.fr" class="contact-link">louise.lam@etu.u-paris.fr</a>
+                </div>
+              </li>
+    
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+                  <a href="tel:+33760034862" class="contact-link">+(33)6 61 43 32 48</a>
+                </div>
+              </li>
+    
+              <li class="contact-item" id="location">
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
+                  <address>Paris, France</address>
+                </div>
+              </li>
+            </ul>
+            <div class="separator"></div>
+          </div>
+          <!-- Contenu principal -->
+          <div class="grid-container"></div>
+          <div class="main-content">
+            <nav>
+              <a href="#About" class="active">About</a>
+              <a href="#Resume">Resume</a>
+              <a href="#Projects">Projects</a>
+            </nav>
+            <!-- ABOUT ME-->
+            <article class="about  active" id="About">
+              <section class="about-text">
+                <h2 class="h2 article-title">About me</h2>
+                <br><br>
+                <p>
+                  🤷🏻‍♀️ I'm Louise LAM, a bioinformatics enthusiast currently in an apprenticeship at Sanofi, eagerly
+                  delving into the endless possibilities of science.
+                </p>
+                <p>
+                  🎓 With a dual degree in biology and computer science, and currently pursuing my Master's at the University
+                  of Paris Cité, I thrive in the symbiosis of science and technology.
+                </p>
+                <p>
+                  🗣️ Fluent in multiple languages including French, English, and Chinese, with a foundation in Spanish, I
+                  effortlessly navigate between them.
+                </p>
+                <p>
+                  🎹 Outside of my academic endeavors, I flourish in the realm of piano playing, where I find both solace and
+                  inspiration, nurturing my passion for music alongside my studies.
+                </p>
+                <p>
+                  🍽️ While my professional journey initially began in the bustling realms of sales and hospitality, where I
+                  honed invaluable teamwork and customer service skills, my true calling lies within bioinformatics.
+                </p>
+                <p>
+                  ❤️‍🔥 Overall, I am driven by a curiosity for knowledge and a desire to make meaningful contributions to the
+                  field of bioinformatics while also embracing the beauty of art and culture in all its forms.
+                </p>
+              </section>
+            </article>
+            <!-- RESUME-->
+            <article class="about  active" id="Resume">
+              <section class="about-text">
+                <h2 class="h2 article-title">Resume</h2>
+                <br><br>
+                <!-- Education -->
+                <section class="timeline">
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <h3 class="h3">Education</h3>
+                  </div>
+                  <ol class="timeline-list">
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Paris Cité University</h4>
+                      <span>2023 — 2024</span>
+                      <p class="timeline-text">
+                        Master's Degree in Computational Biology.
+                      </p>
+                    </li>
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Paris Cité University</h4>
+                      <span>2020 — 2023</span>
+                      <p class="timeline-text">
+                        Double degree in life sciences and computer science.
+                      </p>
+                    </li>
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Jean de la Fontaine High School</h4>
+                      <span>2016 — 2019</span>
+                      <p class="timeline-text">
+                        Scientific Baccalaureate with a specialization in Chinese.
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+                <!-- Experience -->
+                <section class="timeline">
+                  <div class="title-wrapper">
+                    <div class="icon-box">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <h3 class="h3">Experience</h3>
+                  </div>
+                  <ol class="timeline-list">
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title"> Internship in a laboratory with Mr. Moroy</h4>
+                      <span> june 2023 </span>
+                      <p class="timeline-text">
+                        Studying both the Prostate-associated microseminoprotein and the Beta-microseminoprotein.
+                      </p>
+                    </li>
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Tutor in biology at Paris-Cité University</h4>
+                      <span>2022 — 2023 </span>
+                      <p class="timeline-text">
+                        Supporting students facing difficulties from the Second Grade to the Baccalaureate level.
+                        Managing a heterogeneous class, Versatility, patience.
+                      </p>
+                    </li>
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Employee at IT Trattoria</h4>
+                      <span>Summer break 2022</span>
+                      <p class="timeline-text">
+                        I've hab the opportunity to work in the kitchen, at the cash register, and even in the dining area.
+                      </p>
+                    </li>
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Academic support</h4>
+                      <span>Summer break 2022</span>
+                      <p class="timeline-text">
+                        Weekly one-hour mentoring for a 1st-grade girl as part of a program supporting students facing
+                        socio-economic discrimination.
+                      </p>
+                    </li>
+                  </ol>
+            </section>
+            <!-- Skills -->
+            <section class="skill">
+              <h3 class="h3 skills-title">My skills</h3>
+              <ul class="skills-list content-card">
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Object-oriented programming</h5>
+                    <data value="90">90%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width:90%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Web programming</h5>
+                    <data value="70">70%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 70%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">System programming</h5>
+                    <data value="40">40%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Network programming</h5>
+                    <data value="60">60%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Protein Docking</h5>
+                    <data value="20">20%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Molecular Dynamics</h5>
+                    <data value="30">30%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 30%;"></div>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Protein Structure</h5>
+                    <data value="70">70%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 70%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </article>
+          <!-- PROJECTS-->
+          <article class="about  active" id="Projects">
+            <section class="about-text">
+              <h2 class="h2 article-title">Projects</h2>
+              <br>
+              <div class="project-container">
+                <!-- Protein Interaction Network -->
+                <div class="card">
+                  <div class="picture" style="background-image: url('img/icons/molecules.png');"></div>
+                  <div class="card-content">
+                    <h3>Protein Docking</h3>
+                    <p>Mapping protein-protein interaction networks to identify key regulatory pathways.</p>
+                  </div>
+                </div>
+                <!-- Drug Design -->
+                <div class="card">
+                  <div class="picture" style="background-image: url('img/icons/drug.png');"></div>
+                  <div class="card-content">
+                    <h3>Drug Design</h3>
+                    <p>Designing novel drug molecules targeting specific biological pathways.</p>
+                  </div>
+                </div>
+                <!-- Homology Modeling -->
+                <div class="card">
+                  <div class="picture" style="background-image: url('img/icons/structure.png');"></div>
+                  <div class="card-content">
+                    <h3>Homology Modeling</h3>
+                    <p>Predicting the three-dimensional structure of proteins based on known homologous structures.</p>
+                  </div>
+                </div>
+                <!-- Biostatistics -->
+                <div class="card">
+                  <div class="picture" style="background-image: url('img/icons/stat.png');"></div>
+                  <div class="card-content">
+                    <h3>Biostatistics</h3>
+                    <p>Developing statistical models for predicting biological targets and outcomes.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+      <footer class="text-center" id="footer">
+        <hr>
+        <br>
+        Copyright &copy; Université Paris-Cité - All rights reserved
+        <br>
+        Contact: <a class="contact-link" href="mailto:louise.lam@etu.u-paris.fr">Louise LAM</a> et <a class="contact-link" href="mailto:essmay.touami@etu.u-paris.fr">Essmay TOUAMI</a>
+      </footer>
+    </div>
+  </body>
+</html>

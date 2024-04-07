@@ -1,3 +1,4 @@
+/* BACKGROUND IMAGE */
 .bgimg{
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
     width: 100%;
 }
 
-/* NAVBAR 1 */
+/* NAVBAR 1: STREAMING/READING BUTTONS */
 .buttons{
     display: flex;
     flex-direction: row;
@@ -87,7 +88,6 @@
     background-color: rgb(86, 86, 86);
     box-shadow: 0 0 5px  rgb(86, 86, 86), 0 0 10px  rgb(86, 86, 86), 0 0 15px  rgb(86, 86, 86); /* Ajoute un effet de lueur */
 }
-/* MAIN */
 .main{
     display: flex;
     flex-direction: column;
@@ -99,6 +99,8 @@
     border-radius: 10px;
     border-top-left-radius: 0px;
 }
+
+/* NAV-BAR2: CONTENT BUTTONS */
 .buttons2{
     width: 100%;
 }
@@ -134,6 +136,8 @@
     color: white;
     text-shadow: 0 0 3px #ffffff, 0 0 0px #ffffff, 0 0 10px #ffffff;
 }
+
+/* CONTENT */
 .mycontent{
     display: flex;
     justify-content: space-evenly;
@@ -142,8 +146,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-/* LEFT PANEL */
+/* left panel */
 .pic{
     display: flex;
     flex-direction: column;
@@ -192,7 +195,6 @@
     display: block;
     color: #777;
 }
-
 /* star rating */
 .rating{
     display:flex;
@@ -241,7 +243,7 @@
     opacity: 1;
 }
 
-/* RIGHT PANEL */
+/* right panel */
 .myform{
     display:flex;
     flex-direction: column;
@@ -321,6 +323,7 @@ textarea{
     padding-bottom: 5px;
     position: relative;
     z-index: 10;
+    color: #007bff;
 }
 .custom-select {
     border: 2px solid #ccc; 
@@ -357,6 +360,7 @@ textarea{
     background-color: darkgrey;
 }
 
+/* RESIZING */
 @media screen and (max-width: 800px) {
     .main {
         display: flex;
